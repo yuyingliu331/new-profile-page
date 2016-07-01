@@ -1,0 +1,397 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-gb" xml:lang="en-gb">
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-language" content="en-gb" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<title>virtualbox.org &bull; View topic - Mac OS X guest sound support driver UPDATE [See Attachment]</title>
+
+
+
+<!--
+	phpBB style name: prosilver
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:
+-->
+
+<script type="text/javascript">
+// <![CDATA[
+	var jump_page = 'Enter the page number you wish to go to:';
+	var on_page = '1';
+	var per_page = '';
+	var base_url = '';
+	var style_cookie = 'phpBBstyle';
+	var style_cookie_settings = '; path=/; domain=forums.virtualbox.org; secure';
+	var onload_functions = new Array();
+	var onunload_functions = new Array();
+
+	
+
+	/**
+	* Find a member
+	*/
+	function find_username(url)
+	{
+		popup(url, 760, 570, '_usersearch');
+		return false;
+	}
+
+	/**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+	window.onload = function()
+	{
+		for (var i = 0; i < onload_functions.length; i++)
+		{
+			eval(onload_functions[i]);
+		}
+	};
+
+	window.onunload = function()
+	{
+		for (var i = 0; i < onunload_functions.length; i++)
+		{
+			eval(onunload_functions[i]);
+		}
+	};
+
+// ]]>
+</script>
+<script type="text/javascript" src="./styles/prosilver/template/styleswitcher.js"></script>
+<script type="text/javascript" src="./styles/prosilver/template/forum_fn.js"></script>
+
+<link href="./styles/prosilver/theme/print.css" rel="stylesheet" type="text/css" media="print" title="printonly" />
+<link href="./style.php?id=1&amp;lang=en" rel="stylesheet" type="text/css" media="screen, projection" />
+
+<link href="./styles/prosilver/theme/normal.css" rel="stylesheet" type="text/css" title="A" />
+<link href="./styles/prosilver/theme/medium.css" rel="alternate stylesheet" type="text/css" title="A+" />
+<link href="./styles/prosilver/theme/large.css" rel="alternate stylesheet" type="text/css" title="A++" />
+
+
+
+</head>
+
+<body id="phpbb" class="section-viewtopic ltr">
+
+<div id="wrap">
+	<a id="top" name="top" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<div id="site-description">
+				<a href="./index.php" title="Board index" id="logo"><img src="./styles/prosilver/imageset/vbox_94px.png" alt="Board index" title="Board index" /></a>
+				<h1>virtualbox.org</h1>
+				<p>End user forums for VirtualBox</p>
+			</div>
+
+		
+			<div id="search-box">
+				<form action="./search.php" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="text" maxlength="128" title="Search for keywords" class="inputbox search" value="Search…" onclick="if(this.value=='Search…')this.value='';" onblur="if(this.value=='')this.value='Search…';" />
+					<input class="button2" value="Search" type="submit" /><br />
+					<a href="./search.php" title="View the advanced search options">Advanced search</a> 
+				</fieldset>
+				</form>
+			</div>
+		
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+
+		<div class="navbar">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<ul class="linklist navlinks">
+				<li class="icon-home"><a href="./index.php" accesskey="h">Board index</a>  <strong>&#8249;</strong> <a href="./viewforum.php?f=12">General</a> <strong>&#8249;</strong> <a href="./viewforum.php?f=23">Howtos and Tutorials</a> <strong>&#8249;</strong> <a href="./viewforum.php?f=30">Other Guests</a></li>
+
+				<li class="rightside"><a href="#" onclick="fontsizeup(); return false;" onkeypress="return fontsizeup(event);" class="fontsize" title="Change font size">Change font size</a></li>
+
+				<li class="rightside"><a href="./viewtopic.php?f=30&amp;t=33358&amp;view=print" title="Print view" accesskey="p" class="print">Print view</a></li>
+			</ul>
+
+			
+
+			<ul class="linklist rightside">
+				<li class="icon-faq"><a href="./faq.php" title="Frequently Asked Questions">FAQ</a></li>
+				
+					<li class="icon-logout"><a href="./login.html" title="Login" accesskey="x">Login</a></li>
+				
+			</ul>
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+
+	</div>
+
+	<a name="start_here"></a>
+	<div id="page-body">
+		
+<h2><a href="./viewtopic.php?f=30&amp;t=33358">Mac OS X guest sound support driver UPDATE [See Attachment]</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body -->
+
+<div class="topic-actions">
+
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="./posting.php?mode=reply&amp;f=30&amp;t=33358" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php">
+			<fieldset>
+				<input class="inputbox search tiny"  type="text" name="keywords" id="search_keywords" size="20" value="Search this topic…" onclick="if(this.value=='Search this topic…')this.value='';" onblur="if(this.value=='')this.value='Search this topic…';" />
+				<input class="button2" type="submit" value="Search" />
+				<input type="hidden" name="t" value="33358" />
+<input type="hidden" name="sf" value="msgonly" />
+
+			</fieldset>
+			</form>
+		</div>
+	
+		<div class="pagination">
+			1 post
+			 &bull; Page <strong>1</strong> of <strong>1</strong>
+		</div>
+	
+
+</div>
+<div class="clear"></div>
+
+
+	<div id="p149112" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=30&amp;p=149112" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 class="first"><a href="#p149112">Mac OS X guest sound support driver UPDATE [See Attachment]</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=149112#p149112"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=49492">OmegaX</a></strong> &raquo; 12. May 2010, 06:40 </p>
+
+			
+
+			<div class="content">EDIT: Added installer package for easier installation.<br />[See Below Attachments]<br />Put this together after setting up an OS X guest in VirtualBox and thought i'd share with the community.<br /><br />This driver supports both Leopard and Snow Leopard guests<br />(Please note this driver is for 32-bit mode only)<br /><br />To install, download and run package in guest, reboot and enjoy sound!<br /><div class="inline-attachment">
+		<dl class="file">
+			<dt><img src="./styles/prosilver/imageset/icon_topic_attach.gif" width="7" height="10" alt="" title="" /> <a class="postlink" href="./download/file.php?id=2868">VirtualBox ICH AC97 Audio Driver.zip</a></dt>
+			<dd><em>VirtualBox ICH AC97 Audio Driver for OS X 10.5.x/10.6.x Package with installer</em></dd>
+			<dd>(57.79 KiB) Downloaded 84566 times</dd>
+		</dl>
+		</div><br /><img src="http://i42.tinypic.com/pc5ya.jpg" alt="Image" /><br /><br />To Install manual way (Simplified for those who aren't familiar with kext loading):<br /><div class="inline-attachment">
+		<dl class="file">
+			<dt><img src="./styles/prosilver/imageset/icon_topic_attach.gif" width="7" height="10" alt="" title="" /> <a class="postlink" href="./download/file.php?id=2867">VirtualBoxICHAC97DriverOSX.zip</a></dt>
+			<dd><em>VirtualBox ICH AC97 Audio driver for OS X 10.5.x/10.6.x Manual install</em></dd>
+			<dd>(65.47 KiB) Downloaded 16839 times</dd>
+		</dl>
+		</div><br />You can use Kext Helper to install if you don't want to use the terminal: <a href="http://cheetha.net" class="postlink">http://cheetha.net</a> <a href="http://web.mac.com/v1.42ghz/Kext_Helper/Software_files/Kext%20Helper%20b7.zip" class="postlink">http://web.mac.com/v1.42ghz/Kext_Helper/Software_files/Kext%20Helper%20b7.zip</a><br />It's recommended to delete Extensions.mkext after still to ensure the new kext gets loaded.<br /><br />Terminal method:<br /><br />1.Extract the zip to your guest OS X desktop (not into a folder, literally to your desktop) this means there should be a file on your desktop called AppleAC97Audio.kext?<br />2. Open Terminal, (/applications/utilities/terminal.app)?<br />3. Type sudo -s in terminal then your admin password following this, now you should be root.?<br />4. Type sudo mv /users/(YOUR USERNAME)/desktop/AppleAC97Audio.kext /system/library/extensions ?<br />at this point the file AppleAC97Audio.kext should have disappeared from the desktop,?<br />5. Type sudo chmod -R 755 /System/Library/Extensions/AppleAC97Audio.kext<br />?6. Type sudo chown -R root:wheel /System/Library/Extensions/AppleAC97Audio.kext?<br />7. Now, CLOSE TERMINAL ?then go to /system/library/caches/com.apple.kext.caches/ and trash? Extensions.mkext<br />(This cache will regenerate automatically on boot with the current kext library)<br />8. Reboot and enjoy sound support!<br /><br /><br /><img src="http://i39.tinypic.com/23uo0nl.jpg" alt="Image" /><br /><br />Anyone looking to build these drivers see the source here: <a href="http://www.opensource.apple.com/source/AppleAC97Audio/AppleAC97Audio-5/" class="postlink">http://www.opensource.apple.com/source/AppleAC97Audio/AppleAC97Audio-5/</a><br /><br />UPDATE: x86-64 source with VirtualBox tweaks here: <br /><div class="inline-attachment">
+		<dl class="file">
+			<dt><img src="./styles/prosilver/imageset/icon_topic_attach.gif" width="7" height="10" alt="" title="" /> <a class="postlink" href="./download/file.php?id=2869">AppleAC97Audio-5-x86-64_sources.zip</a></dt>
+			<dd><em>AppleAC97Audio x86-64 source with VirtualBox tweaks, needs work for proper sound quality.</em></dd>
+			<dd>(131.45 KiB) Downloaded 8222 times</dd>
+		</dl>
+		</div><br />Note: This is just the source and requires XCode to compile, theres some issues with the audio quality that came with the 64-bit port that I haven't the time to track down so i'm putting it up to the community and the VirtualBox devs to take a crack at it, the important thing is this source is full 32/62-bit compliant.<br /><br />Info on sound device: <br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a> &nbsp;&nbsp;<a class="codebox" href="#" onclick="return expandCode(this, true);">Expand view</a><a class="codeboxexp" href="#" onclick="return expandCode(this, false);">Collapse view</a></dt><dd><code>00:05.0 Multimedia audio controller &#91;0401&#93;: Intel Corporation 82801AA AC'97 Audio Controller &#91;8086:2415&#93; (rev 01)&nbsp; &nbsp;Subsystem: Intel Corporation Unknown device 0000<br />&nbsp; &nbsp;Flags: bus master, medium devsel, latency 0, IRQ 21<br />&nbsp; &nbsp;I/O ports at 1000<br />&nbsp; &nbsp;I/O ports at 1100</code></dd></dl><br /><br />Notice the vendor ID is 8086 (intel) and the device id is 2415 which will be entered as 0x24158086 in IOPCIPrimaryMatch in the extension's info.plist.<br /><br />info.plist from the driver package:<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a> &nbsp;&nbsp;<a class="codebox" href="#" onclick="return expandCode(this, true);">Expand view</a><a class="codeboxexp" href="#" onclick="return expandCode(this, false);">Collapse view</a></dt><dd><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;<br />&lt;!DOCTYPE plist PUBLIC &quot;-//Apple//DTD PLIST 1.0//EN&quot; &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt;<br />&lt;plist version=&quot;1.0&quot;&gt;<br />&lt;dict&gt;<br />&nbsp; &nbsp;&lt;key&gt;CFBundleDevelopmentRegion&lt;/key&gt;<br />&nbsp; &nbsp;&lt;string&gt;English&lt;/string&gt;<br />&nbsp; &nbsp;&lt;key&gt;CFBundleExecutable&lt;/key&gt;<br />&nbsp; &nbsp;&lt;string&gt;AppleAC97AudioIntelICH&lt;/string&gt;<br />&nbsp; &nbsp;&lt;key&gt;CFBundleGetInfoString&lt;/key&gt;<br />&nbsp; &nbsp;&lt;string&gt;1.0.0, Copyright Apple Computer, Inc. 2004&lt;/string&gt;<br />&nbsp; &nbsp;&lt;key&gt;CFBundleIdentifier&lt;/key&gt;<br />&nbsp; &nbsp;&lt;string&gt;com.apple.driver.AppleAC97AudioIntelICH&lt;/string&gt;<br />&nbsp; &nbsp;&lt;key&gt;CFBundleInfoDictionaryVersion&lt;/key&gt;<br />&nbsp; &nbsp;&lt;string&gt;6.0&lt;/string&gt;<br />&nbsp; &nbsp;&lt;key&gt;CFBundleName&lt;/key&gt;<br />&nbsp; &nbsp;&lt;string&gt;Intel ICHx AC97 Audio Driver&lt;/string&gt;<br />&nbsp; &nbsp;&lt;key&gt;CFBundlePackageType&lt;/key&gt;<br />&nbsp; &nbsp;&lt;string&gt;KEXT&lt;/string&gt;<br />&nbsp; &nbsp;&lt;key&gt;CFBundleShortVersionString&lt;/key&gt;<br />&nbsp; &nbsp;&lt;string&gt;1.0.0&lt;/string&gt;<br />&nbsp; &nbsp;&lt;key&gt;CFBundleSignature&lt;/key&gt;<br />&nbsp; &nbsp;&lt;string&gt;????&lt;/string&gt;<br />&nbsp; &nbsp;&lt;key&gt;CFBundleVersion&lt;/key&gt;<br />&nbsp; &nbsp;&lt;string&gt;1.0.0&lt;/string&gt;<br />&nbsp; &nbsp;&lt;key&gt;IOKitPersonalities&lt;/key&gt;<br />&nbsp; &nbsp;&lt;dict&gt;<br />&nbsp; &nbsp;&nbsp; &nbsp;&lt;key&gt;VirtualBox ICH AC97 Audio&lt;/key&gt;<br />&nbsp; &nbsp;&nbsp; &nbsp;&lt;dict&gt;<br />&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&lt;key&gt;CFBundleIdentifier&lt;/key&gt;<br />&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&lt;string&gt;com.apple.driver.AppleAC97AudioIntelICH&lt;/string&gt;<br />&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&lt;key&gt;ICH Type&lt;/key&gt;<br />&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&lt;integer&gt;2&lt;/integer&gt;<br />&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&lt;key&gt;IOClass&lt;/key&gt;<br />&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&lt;string&gt;AppleAC97AudioIntelICH&lt;/string&gt;<br />&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&lt;key&gt;IOPCIPrimaryMatch&lt;/key&gt;<br />&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&lt;string&gt;0x24158086&lt;/string&gt;<br />&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&lt;key&gt;IOProbeScore&lt;/key&gt;<br />&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&lt;integer&gt;10000&lt;/integer&gt;<br />&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&lt;key&gt;IOProviderClass&lt;/key&gt;<br />&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&lt;string&gt;IOPCIDevice&lt;/string&gt;<br />&nbsp; &nbsp;&nbsp; &nbsp;&lt;/dict&gt;<br />&nbsp; &nbsp;&lt;/dict&gt;<br />&nbsp; &nbsp;&lt;key&gt;OSBundleLibraries&lt;/key&gt;<br />&nbsp; &nbsp;&lt;dict&gt;<br />&nbsp; &nbsp;&nbsp; &nbsp;&lt;key&gt;com.apple.driver.AppleAC97Audio&lt;/key&gt;<br />&nbsp; &nbsp;&nbsp; &nbsp;&lt;string&gt;1.0.0&lt;/string&gt;<br />&nbsp; &nbsp;&nbsp; &nbsp;&lt;key&gt;com.apple.iokit.IOPCIFamily&lt;/key&gt;<br />&nbsp; &nbsp;&nbsp; &nbsp;&lt;string&gt;1.1&lt;/string&gt;<br />&nbsp; &nbsp;&lt;/dict&gt;<br />&lt;/dict&gt;<br />&lt;/plist&gt;<br /></code></dd></dl></div>
+
+			
+				<div class="notice">Last edited by <a href="./memberlist.php?mode=viewprofile&amp;u=49492">OmegaX</a> on 16. Jun 2010, 12:11, edited 12 times in total.
+					
+				</div>
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile149112">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=49492">OmegaX</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 24</dd><dd><strong>Joined:</strong> 12. May 2010, 06:19</dd>
+			<dd><strong>Primary OS:</strong> Mac OS X other</dd>
+		
+			<dd><strong>VBox Version:</strong> OSE other</dd>
+		
+			<dd><strong>Guest OSses:</strong> OS X Snow Leopard</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+
+<div class="topic-actions">
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="./posting.php?mode=reply&amp;f=30&amp;t=33358" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="pagination">
+			1 post
+			 &bull; Page <strong>1</strong> of <strong>1</strong>
+		</div>
+	
+</div>
+
+
+	<p></p><p><a href="./viewforum.php?f=30" class="left-box left" accesskey="r">Return to Other Guests</a></p>
+
+	<form method="post" id="jumpbox" action="./viewforum.php" onsubmit="if(this.f.value == -1){return false;}">
+
+	
+		<fieldset class="jumpbox">
+	
+			<label for="f" accesskey="j">Jump to:</label>
+			<select name="f" id="f" onchange="if(this.options[this.selectedIndex].value != -1){ document.forms['jumpbox'].submit() }">
+			
+				<option value="-1">Select a forum</option>
+			<option value="-1">------------------</option>
+				<option value="12">General</option>
+			
+				<option value="23">&nbsp; &nbsp;Howtos and Tutorials</option>
+			
+				<option value="24">&nbsp; &nbsp;&nbsp; &nbsp;Rules and FAQ</option>
+			
+				<option value="35">&nbsp; &nbsp;&nbsp; &nbsp;Generic Advice</option>
+			
+				<option value="31">&nbsp; &nbsp;&nbsp; &nbsp;Building VirtualBox</option>
+			
+				<option value="25">&nbsp; &nbsp;&nbsp; &nbsp;Windows Hosts</option>
+			
+				<option value="26">&nbsp; &nbsp;&nbsp; &nbsp;Linux Hosts</option>
+			
+				<option value="27">&nbsp; &nbsp;&nbsp; &nbsp;Other Hosts</option>
+			
+				<option value="28">&nbsp; &nbsp;&nbsp; &nbsp;Windows Guests</option>
+			
+				<option value="29">&nbsp; &nbsp;&nbsp; &nbsp;Linux Guests</option>
+			
+				<option value="30" selected="selected">&nbsp; &nbsp;&nbsp; &nbsp;Other Guests</option>
+			
+				<option value="1">&nbsp; &nbsp;Using VirtualBox</option>
+			
+				<option value="6">&nbsp; &nbsp;VirtualBox on Windows Hosts</option>
+			
+				<option value="38">&nbsp; &nbsp;&nbsp; &nbsp;VirtualBox on Windows pre-releases</option>
+			
+				<option value="7">&nbsp; &nbsp;VirtualBox on Linux Hosts</option>
+			
+				<option value="8">&nbsp; &nbsp;VirtualBox on Mac OS X Hosts</option>
+			
+				<option value="39">&nbsp; &nbsp;&nbsp; &nbsp;VirtualBox on Mac OS X pre-releases</option>
+			
+				<option value="11">&nbsp; &nbsp;VirtualBox on Solaris Hosts</option>
+			
+				<option value="40">&nbsp; &nbsp;VirtualBox on Other Hosts</option>
+			
+				<option value="9">&nbsp; &nbsp;Suggestions</option>
+			
+				<option value="32">&nbsp; &nbsp;Third Party Applications</option>
+			
+				<option value="13">Guest systems</option>
+			
+				<option value="2">&nbsp; &nbsp;Windows Guests</option>
+			
+				<option value="3">&nbsp; &nbsp;Linux Guests</option>
+			
+				<option value="20">&nbsp; &nbsp;Solaris Guests</option>
+			
+				<option value="22">&nbsp; &nbsp;Mac OS X Guests</option>
+			
+				<option value="4">&nbsp; &nbsp;Other Guests</option>
+			
+				<option value="14">Deutschsprachige Anwender</option>
+			
+				<option value="5">&nbsp; &nbsp;Allgemeine Diskussionen</option>
+			
+				<option value="33">VirtualBox Programming</option>
+			
+				<option value="34">&nbsp; &nbsp;The VirtualBox API</option>
+			
+				<option value="10">&nbsp; &nbsp;VirtualBox OSE</option>
+			
+				<option value="17">Special Purpose</option>
+			
+				<option value="15">&nbsp; &nbsp;VirtualBox Beta / Release Candidate Feedback</option>
+			
+				<option value="36">&nbsp; &nbsp;&nbsp; &nbsp;Pre-Beta 5.1 Postings</option>
+			
+			</select>
+			<input type="submit" value="Go" class="button2" />
+		</fieldset>
+	</form>
+
+
+	<h3>Who is online</h3>
+	<p>Users browsing this forum: No registered users and 1 guest</p>
+</div>
+
+<div id="page-footer">
+
+	<div class="navbar">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<ul class="linklist">
+			<li class="icon-home"><a href="./index.php">Board index</a></li>
+				
+			<li class="rightside"><a href="./memberlist.php?mode=leaders">The team</a> &bull; <a href="./ucp.php?mode=delete_cookies">Delete all board cookies</a> &bull; All times are UTC + 1 hour [ <abbr title="Daylight Saving Time">DST</abbr> ]</li>
+		</ul>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+ 		<div class="copyright" style="align: center;">
+ 	<table class="footer" cellpadding="5" cellspacing="5" width="100%">
+ 	  <tbody>
+ 	    <tr style="text-align: center;" valign="top">
+ 	      <td>Get VirtualBox<br />
+ 	        <a href="http://www.virtualbox.org/wiki/Downloads">
+ 	          <img src="/styles/prosilver/imageset/vbox_footer_logo.png" alt="Get VirtualBox" height="35"  width="108" /></a>
+ 	      </td>
+ 	      <td>
+ 	        Forum powered by <a href="http://www.phpbb.com/">phpBB</a> &copy; phpBB Group
+		
+ 	        <br />By any use of this Website, you agree to be bound by these <br />
+ 	        <big><b><a href="http://www.oracle.com/us/legal/terms/index.html">Policies and Terms of Use</a></b></big>
+ 	      </td>
+ 	      <td>Sponsored by<br />
+                 <a href="http://www.oracle.com/">
+ 	          <img src="/styles/prosilver/imageset/logo_oracle_footer.gif" height="29" width="100" alt="Sponsored by ORACLE" /></a>
+ 	      </td>
+ 	    </tr> 
+ 	  </tbody>
+ 		 </table>
+	</div>
+</div>
+
+<div>
+	<a id="bottom" name="bottom" accesskey="z"></a>
+	
+</div>
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+Jun 30 20:28:25  accountsd[254] <Debug>: Failed to start the SASL connection
+	SASL(-1): generic failure: XOAUTH2 requires user
+Jun 30 20:28:29  accountsd[254] <Debug>: Failed to start the SASL connection
+	SASL(-1): generic failure: XOAUTH2 requires user

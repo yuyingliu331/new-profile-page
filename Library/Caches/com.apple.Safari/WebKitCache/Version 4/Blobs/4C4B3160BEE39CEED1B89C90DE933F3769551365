@@ -1,0 +1,1036 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-gb" xml:lang="en-gb">
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-language" content="en-gb" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<title>virtualbox.org &bull; View topic - Discuss: Mac OS X guest sound support driver</title>
+
+
+
+<!--
+	phpBB style name: prosilver
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:
+-->
+
+<script type="text/javascript">
+// <![CDATA[
+	var jump_page = 'Enter the page number you wish to go to:';
+	var on_page = '1';
+	var per_page = '15';
+	var base_url = './viewtopic.php?f=22&amp;t=30843';
+	var style_cookie = 'phpBBstyle';
+	var style_cookie_settings = '; path=/; domain=forums.virtualbox.org; secure';
+	var onload_functions = new Array();
+	var onunload_functions = new Array();
+
+	
+
+	/**
+	* Find a member
+	*/
+	function find_username(url)
+	{
+		popup(url, 760, 570, '_usersearch');
+		return false;
+	}
+
+	/**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+	window.onload = function()
+	{
+		for (var i = 0; i < onload_functions.length; i++)
+		{
+			eval(onload_functions[i]);
+		}
+	};
+
+	window.onunload = function()
+	{
+		for (var i = 0; i < onunload_functions.length; i++)
+		{
+			eval(onunload_functions[i]);
+		}
+	};
+
+// ]]>
+</script>
+<script type="text/javascript" src="./styles/prosilver/template/styleswitcher.js"></script>
+<script type="text/javascript" src="./styles/prosilver/template/forum_fn.js"></script>
+
+<link href="./styles/prosilver/theme/print.css" rel="stylesheet" type="text/css" media="print" title="printonly" />
+<link href="./style.php?id=1&amp;lang=en" rel="stylesheet" type="text/css" media="screen, projection" />
+
+<link href="./styles/prosilver/theme/normal.css" rel="stylesheet" type="text/css" title="A" />
+<link href="./styles/prosilver/theme/medium.css" rel="alternate stylesheet" type="text/css" title="A+" />
+<link href="./styles/prosilver/theme/large.css" rel="alternate stylesheet" type="text/css" title="A++" />
+
+
+
+</head>
+
+<body id="phpbb" class="section-viewtopic ltr">
+
+<div id="wrap">
+	<a id="top" name="top" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<div id="site-description">
+				<a href="./index.php" title="Board index" id="logo"><img src="./styles/prosilver/imageset/vbox_94px.png" alt="Board index" title="Board index" /></a>
+				<h1>virtualbox.org</h1>
+				<p>End user forums for VirtualBox</p>
+			</div>
+
+		
+			<div id="search-box">
+				<form action="./search.php" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="text" maxlength="128" title="Search for keywords" class="inputbox search" value="Search…" onclick="if(this.value=='Search…')this.value='';" onblur="if(this.value=='')this.value='Search…';" />
+					<input class="button2" value="Search" type="submit" /><br />
+					<a href="./search.php" title="View the advanced search options">Advanced search</a> 
+				</fieldset>
+				</form>
+			</div>
+		
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+
+		<div class="navbar">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<ul class="linklist navlinks">
+				<li class="icon-home"><a href="./index.php" accesskey="h">Board index</a>  <strong>&#8249;</strong> <a href="./viewforum.php?f=13">Guest systems</a> <strong>&#8249;</strong> <a href="./viewforum.php?f=22">Mac OS X Guests</a></li>
+
+				<li class="rightside"><a href="#" onclick="fontsizeup(); return false;" onkeypress="return fontsizeup(event);" class="fontsize" title="Change font size">Change font size</a></li>
+
+				<li class="rightside"><a href="./viewtopic.php?f=22&amp;t=30843&amp;view=print" title="Print view" accesskey="p" class="print">Print view</a></li>
+			</ul>
+
+			
+
+			<ul class="linklist rightside">
+				<li class="icon-faq"><a href="./faq.php" title="Frequently Asked Questions">FAQ</a></li>
+				
+					<li class="icon-logout"><a href="./login.html" title="Login" accesskey="x">Login</a></li>
+				
+			</ul>
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+
+	</div>
+
+	<a name="start_here"></a>
+	<div id="page-body">
+		
+<h2><a href="./viewtopic.php?f=22&amp;t=30843">Discuss: Mac OS X guest sound support driver</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body --><div style="display: none !important;">Discussions about using Mac OS X guests (on Apple hardware) in VirtualBox.<br /></div>
+
+<div class="topic-actions">
+
+	<div class="buttons">
+	
+		<div class="locked-icon"><a href="./posting.php?mode=reply&amp;f=22&amp;t=30843" title="This topic is locked, you cannot edit posts or make further replies."><span></span>Topic locked</a></div>
+	
+	</div>
+
+	
+		<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php">
+			<fieldset>
+				<input class="inputbox search tiny"  type="text" name="keywords" id="search_keywords" size="20" value="Search this topic…" onclick="if(this.value=='Search this topic…')this.value='';" onblur="if(this.value=='')this.value='Search this topic…';" />
+				<input class="button2" type="submit" value="Search" />
+				<input type="hidden" name="t" value="30843" />
+<input type="hidden" name="sf" value="msgonly" />
+
+			</fieldset>
+			</form>
+		</div>
+	
+		<div class="pagination">
+			75 posts
+			 &bull; <a href="#" onclick="jumpto(); return false;" title="Click to jump to page…">Page <strong>1</strong> of <strong>5</strong></a> &bull; <span><strong>1</strong><span class="page-sep">, </span><a href="./viewtopic.php?f=22&amp;t=30843&amp;start=15">2</a><span class="page-sep">, </span><a href="./viewtopic.php?f=22&amp;t=30843&amp;start=30">3</a><span class="page-sep">, </span><a href="./viewtopic.php?f=22&amp;t=30843&amp;start=45">4</a><span class="page-sep">, </span><a href="./viewtopic.php?f=22&amp;t=30843&amp;start=60">5</a></span>
+		</div>
+	
+
+</div>
+<div class="clear"></div>
+
+
+	<div id="p136884" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 class="first"><a href="#p136884">Discuss: Mac OS X guest sound support driver</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=136884#p136884"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=49492">OmegaX</a></strong> &raquo; 12. May 2010, 06:40 </p>
+
+			
+
+			<div class="content">[modedit]This howto is now available at <!-- l --><a class="postlink-local" href="http://forums.virtualbox.org/viewtopic.php?f=30&amp;t=33358">viewtopic.php?f=30&amp;t=33358</a><!-- l -->. This is now left for discussion.[/modedit]</div>
+
+			
+				<div class="notice">Last edited by <a href="./memberlist.php?mode=viewprofile&amp;u=49492">OmegaX</a> on 16. Jun 2010, 12:11, edited 12 times in total.
+					
+				</div>
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile136884">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=49492">OmegaX</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 24</dd><dd><strong>Joined:</strong> 12. May 2010, 06:19</dd>
+			<dd><strong>Primary OS:</strong> Mac OS X other</dd>
+		
+			<dd><strong>VBox Version:</strong> OSE other</dd>
+		
+			<dd><strong>Guest OSses:</strong> OS X Snow Leopard</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p136893" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p136893">Re: Mac OS X guest sound support for Leopard, Snow Leopard guest</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=136893#p136893"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=44124">notbad</a></strong> &raquo; 12. May 2010, 09:38 </p>
+
+			
+
+			<div class="content">is the sound good? bcs i have installed such an kext but the sound is bad for me. is this kext someway patched?</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile136893">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=44124">notbad</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 78</dd><dd><strong>Joined:</strong> 5. Jan 2010, 16:07</dd>
+			<dd><strong>Primary OS:</strong> Ubuntu other</dd>
+		
+			<dd><strong>VBox Version:</strong> OSE other</dd>
+		
+			<dd><strong>Guest OSses:</strong> Mac OS X</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p136894" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p136894">Re: Mac OS X guest sound support for Leopard, Snow Leopard guest</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=136894#p136894"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=49492">OmegaX</a></strong> &raquo; 12. May 2010, 09:47 </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>notbad wrote:</cite>is the sound good? bcs i have installed such an kext but the sound is bad for me. is this kext someway patched?</div></blockquote><br /><br />Sound quality is perfect for me, played music through it to test it, input(mic) works also. <br />This is the AC97 drivers compiled from Darwin source patched specifically for the AC97 sound device VirtualBox emulates.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile136894">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=49492">OmegaX</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 24</dd><dd><strong>Joined:</strong> 12. May 2010, 06:19</dd>
+			<dd><strong>Primary OS:</strong> Mac OS X other</dd>
+		
+			<dd><strong>VBox Version:</strong> OSE other</dd>
+		
+			<dd><strong>Guest OSses:</strong> OS X Snow Leopard</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p136895" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p136895">Re: Mac OS X guest sound support for Leopard, Snow Leopard guest</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=136895#p136895"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=44124">notbad</a></strong> &raquo; 12. May 2010, 09:53 </p>
+
+			
+
+			<div class="content">thanks I will try <img src="./images/smilies/icon_wink.gif" alt=":wink:" title="Wink" /></div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile136895">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=44124">notbad</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 78</dd><dd><strong>Joined:</strong> 5. Jan 2010, 16:07</dd>
+			<dd><strong>Primary OS:</strong> Ubuntu other</dd>
+		
+			<dd><strong>VBox Version:</strong> OSE other</dd>
+		
+			<dd><strong>Guest OSses:</strong> Mac OS X</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p137529" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p137529">Re: Mac OS X guest sound support driver UPDATE [See Attachment]</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=137529#p137529"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=33309">Kariddi</a></strong> &raquo; 15. May 2010, 01:56 </p>
+
+			
+
+			<div class="content">The audio quality is bad for me.<br /><br />I'm using it on MacOSX 10.6.3 and only one speaker works. The audio also crackles a lot.<br /><br />Any suggestion?</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile137529">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=33309">Kariddi</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 6</dd><dd><strong>Joined:</strong> 22. May 2009, 21:16</dd>
+			<dd><strong>Primary OS:</strong> Linux other</dd>
+		
+			<dd><strong>VBox Version:</strong> PUEL</dd>
+		
+			<dd><strong>Guest OSses:</strong> Windows XP</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p137539" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p137539">Re: Mac OS X guest sound support driver UPDATE [See Attachment]</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=137539#p137539"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=44684">takwing</a></strong> &raquo; 15. May 2010, 03:53 </p>
+
+			
+
+			<div class="content">Are you using v3.2.0 beta 3? <br />Would you mind following my guide to install SL again and see if that works?<br /><br /><!-- m --><a class="postlink" href="http://www.takwing.idv.hk/tech/virtual/v320beta/sl_install1/index.html">http://www.takwing.idv.hk/tech/virtual/ ... index.html</a><!-- m --></div>
+
+			<div id="sig137539" class="signature">come and visit my technical page:<br /><!-- m --><a class="postlink" href="http://www.takwing.idv.hk/tech/index.php">http://www.takwing.idv.hk/tech/index.php</a><!-- m --></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile137539">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=44684">takwing</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 72</dd><dd><strong>Joined:</strong> 17. Jan 2010, 07:44</dd><dd><strong>Location:</strong> Hong Kong</dd>
+			<dd><strong>Primary OS:</strong> MS Windows 7</dd>
+		
+			<dd><strong>VBox Version:</strong> PUEL</dd>
+		
+			<dd><strong>Guest OSses:</strong> winxp, Leopard, Snow Leopard, , Win7, ubuntu 9.10</dd>
+		
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://www.takwing.idv.hk/" title="WWW: http://www.takwing.idv.hk/"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p137547" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p137547">Re: Mac OS X guest sound support driver UPDATE [See Attachment]</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=137547#p137547"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=49492">OmegaX</a></strong> &raquo; 15. May 2010, 05:45 </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>Kariddi wrote:</cite>The audio quality is bad for me.<br /><br />I'm using it on MacOSX 10.6.3 and only one speaker works. The audio also crackles a lot.<br /><br />Any suggestion?</div></blockquote><br /><br />I'm not sure, I haven't been able to recreate that problem but i've seen a few people have it, for most it seems to be working fine. <br />are you using NullCPUPowerManagement.kext as well? if not it might help to install it.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile137547">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=49492">OmegaX</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 24</dd><dd><strong>Joined:</strong> 12. May 2010, 06:19</dd>
+			<dd><strong>Primary OS:</strong> Mac OS X other</dd>
+		
+			<dd><strong>VBox Version:</strong> OSE other</dd>
+		
+			<dd><strong>Guest OSses:</strong> OS X Snow Leopard</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p137999" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p137999">Re: Mac OS X guest sound support driver UPDATE [See Attachment]</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=137999#p137999"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=49346">paulscode</a></strong> &raquo; 18. May 2010, 22:12 </p>
+
+			
+
+			<div class="content">This doesn't seem to work for me.  My host is Ubuntu Lucid 64-bit, VB is 3.2 Beta2, guest is Snow Leopard 10.6.3.  I tried both the package installer method and the manual install method.  In both cases, the guest freezes when shutting down, requiring me to power it off manually.  After firing back up, there is still no sound and the System Preferences-&gt;Sound window shows &quot;No output devices found&quot;.<br /><br />Note, my Snow Leopard guest is running in 64-bit mode (seems to be required for some reason, probably since the host is 64-bit).  Do you know if that could be causing a problem?</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile137999">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=49346">paulscode</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 25</dd><dd><strong>Joined:</strong> 9. May 2010, 03:36</dd>
+			<dd><strong>Primary OS:</strong> Ubuntu other</dd>
+		
+			<dd><strong>VBox Version:</strong> PUEL</dd>
+		
+			<dd><strong>Guest OSses:</strong> XP, Tiger, Leopard, Snow Leopard</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p138038" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p138038">Re: Mac OS X guest sound support driver UPDATE [See Attachment]</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=138038#p138038"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=49492">OmegaX</a></strong> &raquo; 19. May 2010, 01:05 </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>paulscode wrote:</cite>This doesn't seem to work for me.  My host is Ubuntu Lucid 64-bit, VB is 3.2 Beta2, guest is Snow Leopard 10.6.3.  I tried both the package installer method and the manual install method.  In both cases, the guest freezes when shutting down, requiring me to power it off manually.  After firing back up, there is still no sound and the System Preferences-&gt;Sound window shows &quot;No output devices found&quot;.<br /><br />Note, my Snow Leopard guest is running in 64-bit mode (seems to be required for some reason, probably since the host is 64-bit).  Do you know if that could be causing a problem?</div></blockquote><br /><br />I forgot to mention this but the driver is only 32-bit, thats why it's not loading when you're in 64-bit mode. I'm going to try to work on a 64-bit compatible driver but for now you could run in 32-bit to get sound support working, you aren't required to run the guest as 64-bit on 64-bit hardware, I run mine in 32-bit on my 64-bit Core 2 Duo system.<br /><br />I'll edit the topic to make it known it's currently 32-bit only.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile138038">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=49492">OmegaX</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 24</dd><dd><strong>Joined:</strong> 12. May 2010, 06:19</dd>
+			<dd><strong>Primary OS:</strong> Mac OS X other</dd>
+		
+			<dd><strong>VBox Version:</strong> OSE other</dd>
+		
+			<dd><strong>Guest OSses:</strong> OS X Snow Leopard</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p138039" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p138039">Re: Mac OS X guest sound support driver UPDATE [See Attachment]</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=138039#p138039"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=49346">paulscode</a></strong> &raquo; 19. May 2010, 01:07 </p>
+
+			
+
+			<div class="content">Awesome, thanks much!</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile138039">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=49346">paulscode</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 25</dd><dd><strong>Joined:</strong> 9. May 2010, 03:36</dd>
+			<dd><strong>Primary OS:</strong> Ubuntu other</dd>
+		
+			<dd><strong>VBox Version:</strong> PUEL</dd>
+		
+			<dd><strong>Guest OSses:</strong> XP, Tiger, Leopard, Snow Leopard</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p138214" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p138214">Re: Mac OS X guest sound support driver UPDATE [See Attachment]</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=138214#p138214"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=12623" style="color: #3366CC;" class="username-coloured">Sasquatch</a></strong> &raquo; 19. May 2010, 22:28 </p>
+
+			
+
+			<div class="content">Can you also provide the source code of the driver, so that the devs can possibly use it for Guest Additions (if they are going to add audio to it)?<br /><br />In the mean time, I think this is a great addition and will therefore sticky this thread.</div>
+
+			<div id="sig138214" class="signature">Read the <a href="http://forums.virtualbox.org/viewtopic.php?t=8208" class="postlink">Forum Posting Guide</a> before opening a topic.<br /><a href="http://forums.virtualbox.org/viewtopic.php?t=8669" class="postlink">VirtualBox FAQ</a>: Check this before asking questions.<br /><a href="http://www.virtualbox.org/manual/UserManual.html" class="postlink">Online User Manual</a>: A must read if you want to know what we're talking about.<br /><a href="http://forums.virtualbox.org/viewtopic.php?t=15679" class="postlink">Howto: Install Linux Guest Additions</a><br /><a href="http://forums.virtualbox.org/viewtopic.php?t=15868" class="postlink">Howto: Use Shared Folders on Linux Guest</a><br />See the Tutorials and FAQ section at the top of the Forum for more guides.<br />Try searching the forums first with Google and add the site filter for this forum.<br />E.g. <span style="font-weight: bold">install guest additions site:forums.virtualbox.org</span><br /><br />Retired from this Forum since OSSO introduction.</div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile138214">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=12623" style="color: #3366CC;" class="username-coloured">Sasquatch</a>
+			</dt>
+
+			<dd>Volunteer</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 17800</dd><dd><strong>Joined:</strong> 17. Mar 2008, 13:41</dd><dd><strong>Location:</strong> /dev/random</dd>
+			<dd><strong>Primary OS:</strong> Debian other</dd>
+		
+			<dd><strong>VBox Version:</strong> PUEL</dd>
+		
+			<dd><strong>Guest OSses:</strong> Windows XP, Windows 7, Linux</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p138479" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p138479">Re: Mac OS X guest sound support driver UPDATE [See Attachment]</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=138479#p138479"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=49492">OmegaX</a></strong> &raquo; 21. May 2010, 04:00 </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>Sasquatch wrote:</cite>Can you also provide the source code of the driver, so that the devs can possibly use it for Guest Additions (if they are going to add audio to it)?<br /><br />In the mean time, I think this is a great addition and will therefore sticky this thread.</div></blockquote><br /><br />Thank you, I'll provide all the necessary info for building the driver shortly.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile138479">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=49492">OmegaX</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 24</dd><dd><strong>Joined:</strong> 12. May 2010, 06:19</dd>
+			<dd><strong>Primary OS:</strong> Mac OS X other</dd>
+		
+			<dd><strong>VBox Version:</strong> OSE other</dd>
+		
+			<dd><strong>Guest OSses:</strong> OS X Snow Leopard</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p138932" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p138932">Re: Mac OS X guest sound support driver UPDATE [See Attachment]</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=138932#p138932"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=21">Technologov</a></strong> &raquo; 23. May 2010, 14:27 </p>
+
+			
+
+			<div class="content">Having AC97 driver is very favorable development.<br /><br />OmegaX: Which community are you come from? OSx86, or from VBox OSE, or from Oracle, or ... ?</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile138932">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=21">Technologov</a>
+			</dt>
+
+			<dd>Volunteer</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 3235</dd><dd><strong>Joined:</strong> 10. May 2007, 16:59</dd><dd><strong>Location:</strong> Israel</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p138961" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p138961">Re: Mac OS X guest sound support driver UPDATE [See Attachment]</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=138961#p138961"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=49492">OmegaX</a></strong> &raquo; 23. May 2010, 18:19 </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>Technologov wrote:</cite>Having AC97 driver is very favorable development.<br /><br />OmegaX: Which community are you come from? OSx86, or from VBox OSE, or from Oracle, or ... ?</div></blockquote><br /><br />I guess you could say i'm from OSx86 but posting this extension there was my first post in years of inactivity.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile138961">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=49492">OmegaX</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 24</dd><dd><strong>Joined:</strong> 12. May 2010, 06:19</dd>
+			<dd><strong>Primary OS:</strong> Mac OS X other</dd>
+		
+			<dd><strong>VBox Version:</strong> OSE other</dd>
+		
+			<dd><strong>Guest OSses:</strong> OS X Snow Leopard</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p139067" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p139067">Re: Mac OS X guest sound support driver UPDATE [See Attachment]</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=139067#p139067"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=44684">takwing</a></strong> &raquo; 24. May 2010, 11:05 </p>
+
+			
+
+			<div class="content">Omega,<br /><br />I got some information that you may find interesting.<br /><br />I have tried your NullCPUPowerManagement kext installation package on my existing SL VM (which has sound working by using your audio driver).  Installation of NullCPUPowerManagement kext is find (as reported).  After I reboot, I find that my sound does not work perfectly anymore.... there is only sound from the right channel (if I remember correctly, this has been reported by one user also) and the sound interruptions issue reoccurs again!<br /><br />Trying to solve this problem, I have tried to<br />- reinstall the audio driver by using the installation package.  Installation is reported to be OK, but after reboot, the sound is not improved.<br />- hopefully, I have take a snapshot installing and testing the audio dirver... and so I restore that snapshot.<br />  I boot up the machine again and to my surprise, the problem is not solved!  (I previously think that restoring a snapshot is a MUST-WORK solution.)<br /><br />The sound is still not working perfectly at this moment.  I have taken a snapshot of the boot up screen and I wonder iif the 2 lines that are related to audio driver expected or not.  Sorry that I really cannot tell if these 2 lines are in fact there even when the audio is working perfectly.<br /><br />Besides, I have tried to &quot;tune&quot; the left-right balance of the sound volume in MacOS and have the following findings:<br />- when I move the slider to the right a little bit, sounds are coming out from my left speaker (I am sure that the left, right channel of my system is correct as I have verified this in Windows)<br />- when I move the slider to the farmost right, there is no sounds coming out from both speaker<br />- when I move the slider to the center, or a little bit to the left, sounds are coming out from my right speaker (I am sure that the left, right channel of my system is correct as I have verified this in Windows)<br />- when I move the slider to the farmost left, there is no sounds coming out from both speaker</div>
+
+			
+				<dl class="attachbox">
+					<dt>Attachments</dt>
+					
+						<dd>
+		<dl class="file">
+			<dt class="attach-image"><img src="./download/file.php?id=2400" alt="sl_vm_bootup.jpg" onclick="viewableArea(this);" /></dt>
+			
+			<dd>sl_vm_bootup.jpg (88.82 KiB) Viewed 192087 times</dd>
+		</dl>
+		</dd>
+					
+				</dl>
+			<div id="sig139067" class="signature">come and visit my technical page:<br /><!-- m --><a class="postlink" href="http://www.takwing.idv.hk/tech/index.php">http://www.takwing.idv.hk/tech/index.php</a><!-- m --></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile139067">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=44684">takwing</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 72</dd><dd><strong>Joined:</strong> 17. Jan 2010, 07:44</dd><dd><strong>Location:</strong> Hong Kong</dd>
+			<dd><strong>Primary OS:</strong> MS Windows 7</dd>
+		
+			<dd><strong>VBox Version:</strong> PUEL</dd>
+		
+			<dd><strong>Guest OSses:</strong> winxp, Leopard, Snow Leopard, , Win7, ubuntu 9.10</dd>
+		
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://www.takwing.idv.hk/" title="WWW: http://www.takwing.idv.hk/"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<form id="viewtopic" method="post" action="./viewtopic.php?f=22&amp;t=30843">
+
+	<fieldset class="display-options" style="margin-top: 0; ">
+		<a href="./viewtopic.php?f=22&amp;t=30843&amp;start=15" class="right-box right">Next</a>
+		<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select> <input type="submit" name="sort" value="Go" class="button2" /></label>
+		
+	</fieldset>
+
+	</form>
+	<hr />
+
+
+<div class="topic-actions">
+	<div class="buttons">
+	
+		<div class="locked-icon"><a href="./posting.php?mode=reply&amp;f=22&amp;t=30843" title="This topic is locked, you cannot edit posts or make further replies."><span></span>Topic locked</a></div>
+	
+	</div>
+
+	
+		<div class="pagination">
+			75 posts
+			 &bull; <a href="#" onclick="jumpto(); return false;" title="Click to jump to page…">Page <strong>1</strong> of <strong>5</strong></a> &bull; <span><strong>1</strong><span class="page-sep">, </span><a href="./viewtopic.php?f=22&amp;t=30843&amp;start=15">2</a><span class="page-sep">, </span><a href="./viewtopic.php?f=22&amp;t=30843&amp;start=30">3</a><span class="page-sep">, </span><a href="./viewtopic.php?f=22&amp;t=30843&amp;start=45">4</a><span class="page-sep">, </span><a href="./viewtopic.php?f=22&amp;t=30843&amp;start=60">5</a></span>
+		</div>
+	
+</div>
+
+
+	<p></p><p><a href="./viewforum.php?f=22" class="left-box left" accesskey="r">Return to Mac OS X Guests</a></p>
+
+	<form method="post" id="jumpbox" action="./viewforum.php" onsubmit="if(this.f.value == -1){return false;}">
+
+	
+		<fieldset class="jumpbox">
+	
+			<label for="f" accesskey="j">Jump to:</label>
+			<select name="f" id="f" onchange="if(this.options[this.selectedIndex].value != -1){ document.forms['jumpbox'].submit() }">
+			
+				<option value="-1">Select a forum</option>
+			<option value="-1">------------------</option>
+				<option value="12">General</option>
+			
+				<option value="23">&nbsp; &nbsp;Howtos and Tutorials</option>
+			
+				<option value="24">&nbsp; &nbsp;&nbsp; &nbsp;Rules and FAQ</option>
+			
+				<option value="35">&nbsp; &nbsp;&nbsp; &nbsp;Generic Advice</option>
+			
+				<option value="31">&nbsp; &nbsp;&nbsp; &nbsp;Building VirtualBox</option>
+			
+				<option value="25">&nbsp; &nbsp;&nbsp; &nbsp;Windows Hosts</option>
+			
+				<option value="26">&nbsp; &nbsp;&nbsp; &nbsp;Linux Hosts</option>
+			
+				<option value="27">&nbsp; &nbsp;&nbsp; &nbsp;Other Hosts</option>
+			
+				<option value="28">&nbsp; &nbsp;&nbsp; &nbsp;Windows Guests</option>
+			
+				<option value="29">&nbsp; &nbsp;&nbsp; &nbsp;Linux Guests</option>
+			
+				<option value="30">&nbsp; &nbsp;&nbsp; &nbsp;Other Guests</option>
+			
+				<option value="1">&nbsp; &nbsp;Using VirtualBox</option>
+			
+				<option value="6">&nbsp; &nbsp;VirtualBox on Windows Hosts</option>
+			
+				<option value="38">&nbsp; &nbsp;&nbsp; &nbsp;VirtualBox on Windows pre-releases</option>
+			
+				<option value="7">&nbsp; &nbsp;VirtualBox on Linux Hosts</option>
+			
+				<option value="8">&nbsp; &nbsp;VirtualBox on Mac OS X Hosts</option>
+			
+				<option value="39">&nbsp; &nbsp;&nbsp; &nbsp;VirtualBox on Mac OS X pre-releases</option>
+			
+				<option value="11">&nbsp; &nbsp;VirtualBox on Solaris Hosts</option>
+			
+				<option value="40">&nbsp; &nbsp;VirtualBox on Other Hosts</option>
+			
+				<option value="9">&nbsp; &nbsp;Suggestions</option>
+			
+				<option value="32">&nbsp; &nbsp;Third Party Applications</option>
+			
+				<option value="13">Guest systems</option>
+			
+				<option value="2">&nbsp; &nbsp;Windows Guests</option>
+			
+				<option value="3">&nbsp; &nbsp;Linux Guests</option>
+			
+				<option value="20">&nbsp; &nbsp;Solaris Guests</option>
+			
+				<option value="22" selected="selected">&nbsp; &nbsp;Mac OS X Guests</option>
+			
+				<option value="4">&nbsp; &nbsp;Other Guests</option>
+			
+				<option value="14">Deutschsprachige Anwender</option>
+			
+				<option value="5">&nbsp; &nbsp;Allgemeine Diskussionen</option>
+			
+				<option value="33">VirtualBox Programming</option>
+			
+				<option value="34">&nbsp; &nbsp;The VirtualBox API</option>
+			
+				<option value="10">&nbsp; &nbsp;VirtualBox OSE</option>
+			
+				<option value="17">Special Purpose</option>
+			
+				<option value="15">&nbsp; &nbsp;VirtualBox Beta / Release Candidate Feedback</option>
+			
+				<option value="36">&nbsp; &nbsp;&nbsp; &nbsp;Pre-Beta 5.1 Postings</option>
+			
+			</select>
+			<input type="submit" value="Go" class="button2" />
+		</fieldset>
+	</form>
+
+
+	<h3>Who is online</h3>
+	<p>Users browsing this forum: No registered users and 1 guest</p>
+</div>
+
+<div id="page-footer">
+
+	<div class="navbar">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<ul class="linklist">
+			<li class="icon-home"><a href="./index.php">Board index</a></li>
+				
+			<li class="rightside"><a href="./memberlist.php?mode=leaders">The team</a> &bull; <a href="./ucp.php?mode=delete_cookies">Delete all board cookies</a> &bull; All times are UTC + 1 hour [ <abbr title="Daylight Saving Time">DST</abbr> ]</li>
+		</ul>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+ 		<div class="copyright" style="align: center;">
+ 	<table class="footer" cellpadding="5" cellspacing="5" width="100%">
+ 	  <tbody>
+ 	    <tr style="text-align: center;" valign="top">
+ 	      <td>Get VirtualBox<br />
+ 	        <a href="http://www.virtualbox.org/wiki/Downloads">
+ 	          <img src="/styles/prosilver/imageset/vbox_footer_logo.png" alt="Get VirtualBox" height="35"  width="108" /></a>
+ 	      </td>
+ 	      <td>
+ 	        Forum powered by <a href="http://www.phpbb.com/">phpBB</a> &copy; phpBB Group
+		
+ 	        <br />By any use of this Website, you agree to be bound by these <br />
+ 	        <big><b><a href="http://www.oracle.com/us/legal/terms/index.html">Policies and Terms of Use</a></b></big>
+ 	      </td>
+ 	      <td>Sponsored by<br />
+                 <a href="http://www.oracle.com/">
+ 	          <img src="/styles/prosilver/imageset/logo_oracle_footer.gif" height="29" width="100" alt="Sponsored by ORACLE" /></a>
+ 	      </td>
+ 	    </tr> 
+ 	  </tbody>
+ 		 </table>
+	</div>
+</div>
+
+<div>
+	<a id="bottom" name="bottom" accesskey="z"></a>
+	
+</div>
+
+</body>
+</html>

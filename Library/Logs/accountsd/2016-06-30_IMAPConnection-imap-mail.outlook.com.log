@@ -1,0 +1,13 @@
+Jun 30 20:28:29  accountsd[254] <Debug>: <0x7fc6fa80fab0:[Disconnected]> Read: * OK
+Jun 30 20:28:29  accountsd[254] <Debug>: <0x7fc6fa80fab0:[Non-authenticated]> Wrote: 1.3 CAPABILITY
+Jun 30 20:28:29  accountsd[254] <Debug>: <0x7fc6fa80fab0:[Non-authenticated]> Read: * CAPABILITY IMAP4REV1 CHILDREN ID NAMESPACE UIDPLUS UNSELECT AUTH=PLAIN AUTH=XOAUTH2 SASL-IR
+Jun 30 20:28:29  accountsd[254] <Debug>: <0x7fc6fa80fab0:[Non-authenticated]> Read: 1.3 OK
+Jun 30 20:28:29  accountsd[254] <Debug>: <0x7fc6fa80fab0:[Non-authenticated]> Wrote: 2.3 ID ("name" "Mac OS X accountsd" "version" "113 (113)" "os" "Mac OS X" "os-version" "10.11.5 (15F34)" "vendor" "Apple Inc.")
+Jun 30 20:28:29  accountsd[254] <Debug>: <0x7fc6fa80fab0:[Non-authenticated]> Read: * ID {
+	    name = "Outlook Imap";
+	    version = "17.4.0.0";
+	}
+Jun 30 20:28:29  accountsd[254] <Debug>: <0x7fc6fa80fab0:[Non-authenticated]> Read: 2.3 OK
+Jun 30 20:28:29  accountsd[254] <Debug>: <0x7fc6fa80fab0:[Non-authenticated]> Wrote: 3.3 AUTHENTICATE XOAUTH2 *****
+Jun 30 20:28:29  accountsd[254] <Debug>: <0x7fc6fa80fab0:[Non-authenticated]> Read: 3.3 NO [AUTHENTICATIONFAILED] OAuth authentication failed.
+Jun 30 20:28:29  accountsd[254] <Debug>: <0x7fc6fa80fab0:[Non-authenticated]> Wrote: 7.3 LOGOUT

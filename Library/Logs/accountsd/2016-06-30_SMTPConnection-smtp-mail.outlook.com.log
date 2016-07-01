@@ -1,0 +1,79 @@
+Jun 30 20:28:24  accountsd[254] <Debug>: [0x7fc6f9754b60] << 220  (127 additional bytes)
+Jun 30 20:28:24  accountsd[254] <Debug>: Connected: <MFSMTPConnection: 0x7fc6f9754b60> (Connected) account: <MFSMTPAccount: 0x7fc6f97d2db0> liuyuying90@live.cn smtp-mail.outlook.com (2E904830-703E-41BA-A1B0-048FC8BA2B80)
+	hostname: smtp-mail.outlook.com, port: 587, security layer: kCFStreamSocketSecurityLevelNone
+Jun 30 20:28:24  accountsd[254] <Debug>: [0x7fc6f9754b60] >> EHLO  (11 additional bytes) 
+Jun 30 20:28:24  accountsd[254] <Debug>: [0x7fc6f9754b60] << 250-BLU437-SMTP41.smtp.hotmail.com Hello [100.8.204.244]
+	
+Jun 30 20:28:24  accountsd[254] <Debug>: [0x7fc6f9754b60] << 250-TURN
+	
+Jun 30 20:28:24  accountsd[254] <Debug>: [0x7fc6f9754b60] << 250-SIZE 41943040
+	
+Jun 30 20:28:24  accountsd[254] <Debug>: [0x7fc6f9754b60] << 250-ETRN
+	
+Jun 30 20:28:24  accountsd[254] <Debug>: [0x7fc6f9754b60] << 250-PIPELINING
+	
+Jun 30 20:28:24  accountsd[254] <Debug>: [0x7fc6f9754b60] << 250-DSN
+	
+Jun 30 20:28:24  accountsd[254] <Debug>: [0x7fc6f9754b60] << 250-ENHANCEDSTATUSCODES
+	
+Jun 30 20:28:24  accountsd[254] <Debug>: [0x7fc6f9754b60] << 250-8bitmime
+	
+Jun 30 20:28:24  accountsd[254] <Debug>: [0x7fc6f9754b60] << 250-BINARYMIME
+	
+Jun 30 20:28:24  accountsd[254] <Debug>: [0x7fc6f9754b60] << 250-CHUNKING
+	
+Jun 30 20:28:24  accountsd[254] <Debug>: [0x7fc6f9754b60] << 250-VRFY
+	
+Jun 30 20:28:24  accountsd[254] <Debug>: [0x7fc6f9754b60] << 250-TLS
+	
+Jun 30 20:28:24  accountsd[254] <Debug>: [0x7fc6f9754b60] << 250-STARTTLS
+	
+Jun 30 20:28:24  accountsd[254] <Debug>: [0x7fc6f9754b60] << 250 OK
+	
+Jun 30 20:28:24  accountsd[254] <Debug>: [0x7fc6f9754b60] >> STARTTLS (0 additional bytes) 
+Jun 30 20:28:24  accountsd[254] <Debug>: [0x7fc6f9754b60] << 220 2.0.0  (17 additional bytes)
+Jun 30 20:28:24  accountsd[254] <Debug>: [0x7fc6f9754b60] >> EHLO  (11 additional bytes) 
+Jun 30 20:28:24  accountsd[254] <Debug>: [0x7fc6f9754b60] << 250-BLU437-SMTP41.smtp.hotmail.com Hello [100.8.204.244]
+	
+Jun 30 20:28:24  accountsd[254] <Debug>: [0x7fc6f9754b60] << 250-TURN
+	
+Jun 30 20:28:24  accountsd[254] <Debug>: [0x7fc6f9754b60] << 250-SIZE 41943040
+	
+Jun 30 20:28:24  accountsd[254] <Debug>: [0x7fc6f9754b60] << 250-ETRN
+	
+Jun 30 20:28:24  accountsd[254] <Debug>: [0x7fc6f9754b60] << 250-PIPELINING
+	
+Jun 30 20:28:24  accountsd[254] <Debug>: [0x7fc6f9754b60] << 250-DSN
+	
+Jun 30 20:28:24  accountsd[254] <Debug>: [0x7fc6f9754b60] << 250-ENHANCEDSTATUSCODES
+	
+Jun 30 20:28:24  accountsd[254] <Debug>: [0x7fc6f9754b60] << 250-8bitmime
+	
+Jun 30 20:28:24  accountsd[254] <Debug>: [0x7fc6f9754b60] << 250-BINARYMIME
+	
+Jun 30 20:28:24  accountsd[254] <Debug>: [0x7fc6f9754b60] << 250-CHUNKING
+	
+Jun 30 20:28:24  accountsd[254] <Debug>: [0x7fc6f9754b60] << 250-VRFY
+	
+Jun 30 20:28:24  accountsd[254] <Debug>: [0x7fc6f9754b60] << 250-AUTH LOGIN PLAIN XOAUTH2
+	
+Jun 30 20:28:24  accountsd[254] <Debug>: [0x7fc6f9754b60] << 250 OK
+	
+Jun 30 20:28:25  accountsd[254] <Debug>: [0x7fc6f9754b60] >> AUTH  (164 additional bytes) 
+Jun 30 20:28:25  accountsd[254] <Debug>: [0x7fc6f9754b60] << 535 5.0.0 OAuth failed: OAuth authentication failed due to Invalid token.  Code -2147184105
+	
+Jun 30 20:28:25  accountsd[254] <Debug>: [0x7fc6f9754b60] >> AUTH  (5 additional bytes) 
+Jun 30 20:28:25  accountsd[254] <Debug>: [0x7fc6f9754b60] << 334  (12 additional bytes)
+Jun 30 20:28:25  accountsd[254] <Debug>: [0x7fc6f9754b60] >>  (28 additional bytes) 
+Jun 30 20:28:25  accountsd[254] <Debug>: [0x7fc6f9754b60] << 334  (12 additional bytes)
+Jun 30 20:28:25  accountsd[254] <Debug>: [0x7fc6f9754b60] >> * (0 additional bytes) 
+Jun 30 20:28:25  accountsd[254] <Debug>: [0x7fc6f9754b60] << 501 5.0.0 Authentication aborted
+	
+Jun 30 20:28:25  accountsd[254] <Debug>: [0x7fc6f9754b60] >> AUTH  (5 additional bytes) 
+Jun 30 20:28:25  accountsd[254] <Debug>: [0x7fc6f9754b60] << 334  (12 additional bytes)
+Jun 30 20:28:25  accountsd[254] <Debug>: [0x7fc6f9754b60] >>  (28 additional bytes) 
+Jun 30 20:28:25  accountsd[254] <Debug>: [0x7fc6f9754b60] << 334  (12 additional bytes)
+Jun 30 20:28:25  accountsd[254] <Debug>: [0x7fc6f9754b60] >> * (0 additional bytes) 
+Jun 30 20:28:25  accountsd[254] <Debug>: [0x7fc6f9754b60] << 501 5.0.0 Authentication aborted
+	
+Jun 30 20:28:25  accountsd[254] <Debug>: [0x7fc6f9754b60] >> QUIT (0 additional bytes) 

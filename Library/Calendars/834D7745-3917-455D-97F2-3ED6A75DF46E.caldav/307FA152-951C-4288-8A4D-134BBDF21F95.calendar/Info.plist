@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AlarmsDisabled</key>
+	<false/>
+	<key>Availability</key>
+	<true/>
+	<key>CalendarPath</key>
+	<string>/caldav/v2/cln2stbjc4hmgrrcd5i62ua0ctp6utbg5pr2sor1dhimsp31e8n6errfctm6abj3dtmg%40virtual/events/</string>
+	<key>CanBePublished</key>
+	<false/>
+	<key>Checked</key>
+	<integer>1</integer>
+	<key>Color</key>
+	<string>#125A12FF</string>
+	<key>ColorEditable</key>
+	<true/>
+	<key>Delegate</key>
+	<false/>
+	<key>Editable</key>
+	<false/>
+	<key>Enabled</key>
+	<true/>
+	<key>EventContainer</key>
+	<true/>
+	<key>Key</key>
+	<string>307FA152-951C-4288-8A4D-134BBDF21F95</string>
+	<key>Notes</key>
+	<string>Holidays and Observances in United States</string>
+	<key>Order</key>
+	<integer>2</integer>
+	<key>OwnerAddresses</key>
+	<array>
+		<string>/caldav/v2/cln2stbjc4hmgrrcd5i62ua0ctp6utbg5pr2sor1dhimsp31e8n6errfctm6abj3dtmg%40virtual/user</string>
+		<string>mailto:en.usa%23holiday@group.v.calendar.google.com</string>
+	</array>
+	<key>OwnerDisplayName</key>
+	<string>Holidays in United States</string>
+	<key>OwnerPrincipalPath</key>
+	<string>/caldav/v2/cln2stbjc4hmgrrcd5i62ua0ctp6utbg5pr2sor1dhimsp31e8n6errfctm6abj3dtmg%40virtual/user/</string>
+	<key>Permission</key>
+	<integer>2</integer>
+	<key>Renameable</key>
+	<true/>
+	<key>ShareDefaultAlarmSettings</key>
+	<true/>
+	<key>TaskContainer</key>
+	<false/>
+	<key>TimeZone</key>
+	<string>America/New_York</string>
+	<key>Title</key>
+	<string>Holidays in United States</string>
+	<key>Type</key>
+	<string>CalDAV</string>
+</dict>
+</plist>

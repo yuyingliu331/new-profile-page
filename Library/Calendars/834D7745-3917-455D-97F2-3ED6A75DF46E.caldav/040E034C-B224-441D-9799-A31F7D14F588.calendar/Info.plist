@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AlarmsDisabled</key>
+	<false/>
+	<key>Availability</key>
+	<true/>
+	<key>CalendarPath</key>
+	<string>/caldav/v2/4dhmurjkc5hn8sq0ctp6utbg5pr2sor1dhimsp31e8n6errfctm6abj3dtmg%40virtual/events/</string>
+	<key>CanBePublished</key>
+	<false/>
+	<key>Checked</key>
+	<integer>1</integer>
+	<key>Color</key>
+	<string>#28754EFF</string>
+	<key>ColorEditable</key>
+	<true/>
+	<key>Delegate</key>
+	<false/>
+	<key>Editable</key>
+	<false/>
+	<key>Enabled</key>
+	<true/>
+	<key>EventContainer</key>
+	<true/>
+	<key>Key</key>
+	<string>040E034C-B224-441D-9799-A31F7D14F588</string>
+	<key>Notes</key>
+	<string>Displays birthdays of people in Google Contacts and optionally 'Your Circles' from Google+. Also displays anniversary and other event dates from Google Contacts, if applicable.</string>
+	<key>Order</key>
+	<integer>1</integer>
+	<key>OwnerAddresses</key>
+	<array>
+		<string>mailto:%23contacts@group.v.calendar.google.com</string>
+		<string>/caldav/v2/4dhmurjkc5hn8sq0ctp6utbg5pr2sor1dhimsp31e8n6errfctm6abj3dtmg%40virtual/user</string>
+	</array>
+	<key>OwnerDisplayName</key>
+	<string>Contacts</string>
+	<key>OwnerPrincipalPath</key>
+	<string>/caldav/v2/4dhmurjkc5hn8sq0ctp6utbg5pr2sor1dhimsp31e8n6errfctm6abj3dtmg%40virtual/user/</string>
+	<key>Permission</key>
+	<integer>2</integer>
+	<key>Renameable</key>
+	<true/>
+	<key>ShareDefaultAlarmSettings</key>
+	<true/>
+	<key>TaskContainer</key>
+	<false/>
+	<key>TimeZone</key>
+	<string>America/New_York</string>
+	<key>Title</key>
+	<string>Birthdays</string>
+	<key>Type</key>
+	<string>CalDAV</string>
+</dict>
+</plist>

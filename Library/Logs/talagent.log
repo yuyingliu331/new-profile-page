@@ -1,0 +1,10 @@
+ Time	               Bundle ID	              Status	Comment
+0.001	                       -	                   -	TALagent Started (system uptime: 141.68 sec, current time: 489072069.78)
+0.272	                       -	                   -	Liveness: 0 -> 1 (run_as_server)
+0.278	                       -	                   -	Liveness: 1 -> 2 (create_xpc_listener)
+0.278	                       -	                   -	Blocking app contact
+0.394	                       -	                   -	Successfully read encryption key from keychain in 0.120249 seconds
+3.280	                       -	                   -	Allowing apps to contact us
+3.280	                       -	                   -	Liveness: 2 -> 1 (__create_xpc_listener_block_invoke)
+15.275	                       -	                   -	Liveness: 1 -> 0 (__run_as_server_block_invoke)
+15.275	                       -	                   -	Exiting out of boredom

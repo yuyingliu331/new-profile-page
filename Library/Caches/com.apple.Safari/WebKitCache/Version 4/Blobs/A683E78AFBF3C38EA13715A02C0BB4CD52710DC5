@@ -1,0 +1,1046 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-gb" xml:lang="en-gb">
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-language" content="en-gb" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<title>virtualbox.org &bull; View topic - Audio not working after update to 4.3.22</title>
+
+
+
+<!--
+	phpBB style name: prosilver
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:
+-->
+
+<script type="text/javascript">
+// <![CDATA[
+	var jump_page = 'Enter the page number you wish to go to:';
+	var on_page = '1';
+	var per_page = '15';
+	var base_url = './viewtopic.php?f=2&amp;t=66084&amp;sid=3356a2f7989d7ac11bdef167c6d14352';
+	var style_cookie = 'phpBBstyle';
+	var style_cookie_settings = '; path=/; domain=forums.virtualbox.org; secure';
+	var onload_functions = new Array();
+	var onunload_functions = new Array();
+
+	
+
+	/**
+	* Find a member
+	*/
+	function find_username(url)
+	{
+		popup(url, 760, 570, '_usersearch');
+		return false;
+	}
+
+	/**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+	window.onload = function()
+	{
+		for (var i = 0; i < onload_functions.length; i++)
+		{
+			eval(onload_functions[i]);
+		}
+	};
+
+	window.onunload = function()
+	{
+		for (var i = 0; i < onunload_functions.length; i++)
+		{
+			eval(onunload_functions[i]);
+		}
+	};
+
+// ]]>
+</script>
+<script type="text/javascript" src="./styles/prosilver/template/styleswitcher.js"></script>
+<script type="text/javascript" src="./styles/prosilver/template/forum_fn.js"></script>
+
+<link href="./styles/prosilver/theme/print.css" rel="stylesheet" type="text/css" media="print" title="printonly" />
+<link href="./style.php?id=1&amp;lang=en&amp;sid=3356a2f7989d7ac11bdef167c6d14352" rel="stylesheet" type="text/css" media="screen, projection" />
+
+<link href="./styles/prosilver/theme/normal.css" rel="stylesheet" type="text/css" title="A" />
+<link href="./styles/prosilver/theme/medium.css" rel="alternate stylesheet" type="text/css" title="A+" />
+<link href="./styles/prosilver/theme/large.css" rel="alternate stylesheet" type="text/css" title="A++" />
+
+
+
+</head>
+
+<body id="phpbb" class="section-viewtopic ltr">
+
+<div id="wrap">
+	<a id="top" name="top" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<div id="site-description">
+				<a href="./index.php?sid=3356a2f7989d7ac11bdef167c6d14352" title="Board index" id="logo"><img src="./styles/prosilver/imageset/vbox_94px.png" alt="Board index" title="Board index" /></a>
+				<h1>virtualbox.org</h1>
+				<p>End user forums for VirtualBox</p>
+			</div>
+
+		
+			<div id="search-box">
+				<form action="./search.php?sid=3356a2f7989d7ac11bdef167c6d14352" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="text" maxlength="128" title="Search for keywords" class="inputbox search" value="Search…" onclick="if(this.value=='Search…')this.value='';" onblur="if(this.value=='')this.value='Search…';" />
+					<input class="button2" value="Search" type="submit" /><br />
+					<a href="./search.php?sid=3356a2f7989d7ac11bdef167c6d14352" title="View the advanced search options">Advanced search</a> <input type="hidden" name="sid" value="3356a2f7989d7ac11bdef167c6d14352" />
+
+				</fieldset>
+				</form>
+			</div>
+		
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+
+		<div class="navbar">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<ul class="linklist navlinks">
+				<li class="icon-home"><a href="./index.php?sid=3356a2f7989d7ac11bdef167c6d14352" accesskey="h">Board index</a>  <strong>&#8249;</strong> <a href="./viewforum.php?f=13&amp;sid=3356a2f7989d7ac11bdef167c6d14352">Guest systems</a> <strong>&#8249;</strong> <a href="./viewforum.php?f=2&amp;sid=3356a2f7989d7ac11bdef167c6d14352">Windows Guests</a></li>
+
+				<li class="rightside"><a href="#" onclick="fontsizeup(); return false;" onkeypress="return fontsizeup(event);" class="fontsize" title="Change font size">Change font size</a></li>
+
+				<li class="rightside"><a href="./viewtopic.php?f=2&amp;t=66084&amp;sid=3356a2f7989d7ac11bdef167c6d14352&amp;view=print" title="Print view" accesskey="p" class="print">Print view</a></li>
+			</ul>
+
+			
+
+			<ul class="linklist rightside">
+				<li class="icon-faq"><a href="./faq.php?sid=3356a2f7989d7ac11bdef167c6d14352" title="Frequently Asked Questions">FAQ</a></li>
+				
+					<li class="icon-logout"><a href="./login.html" title="Login" accesskey="x">Login</a></li>
+				
+			</ul>
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+
+	</div>
+
+	<a name="start_here"></a>
+	<div id="page-body">
+		
+<h2><a href="./viewtopic.php?f=2&amp;t=66084&amp;sid=3356a2f7989d7ac11bdef167c6d14352">Audio not working after update to 4.3.22</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body --><div style="display: none !important;">Discussions about using Windows guests in VirtualBox.<br /></div>
+
+<div class="topic-actions">
+
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="./posting.php?mode=reply&amp;f=2&amp;t=66084&amp;sid=3356a2f7989d7ac11bdef167c6d14352" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php?sid=3356a2f7989d7ac11bdef167c6d14352">
+			<fieldset>
+				<input class="inputbox search tiny"  type="text" name="keywords" id="search_keywords" size="20" value="Search this topic…" onclick="if(this.value=='Search this topic…')this.value='';" onblur="if(this.value=='')this.value='Search this topic…';" />
+				<input class="button2" type="submit" value="Search" />
+				<input type="hidden" name="t" value="66084" />
+<input type="hidden" name="sf" value="msgonly" />
+<input type="hidden" name="sid" value="3356a2f7989d7ac11bdef167c6d14352" />
+
+			</fieldset>
+			</form>
+		</div>
+	
+		<div class="pagination">
+			41 posts
+			 &bull; <a href="#" onclick="jumpto(); return false;" title="Click to jump to page…">Page <strong>1</strong> of <strong>3</strong></a> &bull; <span><strong>1</strong><span class="page-sep">, </span><a href="./viewtopic.php?f=2&amp;t=66084&amp;sid=3356a2f7989d7ac11bdef167c6d14352&amp;start=15">2</a><span class="page-sep">, </span><a href="./viewtopic.php?f=2&amp;t=66084&amp;sid=3356a2f7989d7ac11bdef167c6d14352&amp;start=30">3</a></span>
+		</div>
+	
+
+</div>
+<div class="clear"></div>
+
+
+	<div id="p312713" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=2&amp;p=312713&amp;sid=3356a2f7989d7ac11bdef167c6d14352" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 class="first"><a href="#p312713">Audio not working after update to 4.3.22</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=312713&amp;sid=3356a2f7989d7ac11bdef167c6d14352#p312713"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=91094&amp;sid=3356a2f7989d7ac11bdef167c6d14352">cypherpunk42</a></strong> &raquo; 13. Feb 2015, 23:42 </p>
+
+			
+
+			<div class="content">Hello,<br /><br />I use a Windows 7 guest on my Mac (with Yosemite) for running Flash, Java and other browser plugins. After today's update (4.3.22; updated VirtualBox as well as guest additions in the guest) I seem to have lost audio in the virtual machine. I checked the settings and everything looks okay and I also tried reinstalling the guest additions, without any improvement.<br /><br />Another Windows 7 virtual machine (which doesn't have updated guest additions (4.3.20, I think)) has the same problem.<br /><br />I haven't had reason to debug these kinds of problems before. What would be a good place to start?</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile312713">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=91094&amp;sid=3356a2f7989d7ac11bdef167c6d14352">cypherpunk42</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 7</dd><dd><strong>Joined:</strong> 13. Feb 2015, 23:31</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p312725" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=2&amp;p=312725&amp;sid=3356a2f7989d7ac11bdef167c6d14352" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p312725">Re: Audio not working after update to 4.3.22</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=312725&amp;sid=3356a2f7989d7ac11bdef167c6d14352#p312725"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=55237&amp;sid=3356a2f7989d7ac11bdef167c6d14352" style="color: #00AA00;" class="username-coloured">socratis</a></strong> &raquo; 14. Feb 2015, 00:42 </p>
+
+			
+
+			<div class="content">Take a look at: <a href="https://forums.virtualbox.org/viewtopic.php?f=24&amp;t=48476" class="postlink">Minimum information needed for assistance</a>. Especially the zipped log file could give us some hints.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile312725">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=55237&amp;sid=3356a2f7989d7ac11bdef167c6d14352" style="color: #00AA00;" class="username-coloured">socratis</a>
+			</dt>
+
+			<dd>Site Moderator</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 3973</dd><dd><strong>Joined:</strong> 22. Oct 2010, 11:03</dd><dd><strong>Location:</strong> Greece</dd>
+			<dd><strong>Primary OS:</strong> Mac OS X other</dd>
+		
+			<dd><strong>VBox Version:</strong> PUEL</dd>
+		
+			<dd><strong>Guest OSses:</strong> Win(*&gt;98), Linux*, OSX&gt;10.5</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p312735" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=2&amp;p=312735&amp;sid=3356a2f7989d7ac11bdef167c6d14352" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p312735">Re: Audio not working after update to 4.3.22</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=312735&amp;sid=3356a2f7989d7ac11bdef167c6d14352#p312735"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=91094&amp;sid=3356a2f7989d7ac11bdef167c6d14352">cypherpunk42</a></strong> &raquo; 14. Feb 2015, 01:21 </p>
+
+			
+
+			<div class="content">Logfile attached.<br /><br />This looks a little of relevant:<br /><br />00:00:00.485895 CoreAudio: Using output device: Built-in Output (UID: AppleHDAEngineOutput:1B,0,1,2:0)<br />00:00:00.487403 HdaCodec: can't open out fmt(freq: 44100)</div>
+
+			
+				<dl class="attachbox">
+					<dt>Attachments</dt>
+					
+						<dd>
+		<dl class="file">
+			<dt><img src="./styles/prosilver/imageset/icon_topic_attach.gif" width="7" height="10" alt="" title="" /> <a class="postlink" href="./download/file.php?id=15854&amp;sid=3356a2f7989d7ac11bdef167c6d14352">VBox.zip</a></dt>
+			<dd><em>VBox.log</em></dd>
+			<dd>(14.79 KiB) Downloaded 57 times</dd>
+		</dl>
+		</dd>
+					
+				</dl>
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile312735">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=91094&amp;sid=3356a2f7989d7ac11bdef167c6d14352">cypherpunk42</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 7</dd><dd><strong>Joined:</strong> 13. Feb 2015, 23:31</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p312744" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=2&amp;p=312744&amp;sid=3356a2f7989d7ac11bdef167c6d14352" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p312744">Re: Audio not working after update to 4.3.22</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=312744&amp;sid=3356a2f7989d7ac11bdef167c6d14352#p312744"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=30872&amp;sid=3356a2f7989d7ac11bdef167c6d14352" style="color: #3366CC;" class="username-coloured">loukingjr</a></strong> &raquo; 14. Feb 2015, 02:23 </p>
+
+			
+
+			<div class="content">I updated my Windows 7 Pro guest today and had no audio issues.<br /><br />Make sure the audio isn't muted in the tray.  <img src="./images/smilies/icon_smile.gif" alt=":)" title="Smile" /></div>
+
+			<div id="sig312744" class="signature">OSX, Linux and Windows Hosts &amp; Guests<br />There are three groups of people. Those that can count and those that can't.</div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile312744">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=30872&amp;sid=3356a2f7989d7ac11bdef167c6d14352" style="color: #3366CC;" class="username-coloured">loukingjr</a>
+			</dt>
+
+			<dd>Volunteer</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 8683</dd><dd><strong>Joined:</strong> 30. Apr 2009, 09:45</dd>
+			<dd><strong>Primary OS:</strong> Mac OS X other</dd>
+		
+			<dd><strong>VBox Version:</strong> PUEL</dd>
+		
+			<dd><strong>Guest OSses:</strong> just about all that run</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p312745" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=2&amp;p=312745&amp;sid=3356a2f7989d7ac11bdef167c6d14352" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p312745">Re: Audio not working after update to 4.3.22</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=312745&amp;sid=3356a2f7989d7ac11bdef167c6d14352#p312745"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=55237&amp;sid=3356a2f7989d7ac11bdef167c6d14352" style="color: #00AA00;" class="username-coloured">socratis</a></strong> &raquo; 14. Feb 2015, 02:48 </p>
+
+			
+
+			<div class="content">Same here, I updated about 20 clients and no differences in their capability to produce sound has changed.<br /><br />As for the abstract from your log, I get those too.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile312745">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=55237&amp;sid=3356a2f7989d7ac11bdef167c6d14352" style="color: #00AA00;" class="username-coloured">socratis</a>
+			</dt>
+
+			<dd>Site Moderator</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 3973</dd><dd><strong>Joined:</strong> 22. Oct 2010, 11:03</dd><dd><strong>Location:</strong> Greece</dd>
+			<dd><strong>Primary OS:</strong> Mac OS X other</dd>
+		
+			<dd><strong>VBox Version:</strong> PUEL</dd>
+		
+			<dd><strong>Guest OSses:</strong> Win(*&gt;98), Linux*, OSX&gt;10.5</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p312748" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=2&amp;p=312748&amp;sid=3356a2f7989d7ac11bdef167c6d14352" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p312748">Re: Audio not working after update to 4.3.22</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=312748&amp;sid=3356a2f7989d7ac11bdef167c6d14352#p312748"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=91094&amp;sid=3356a2f7989d7ac11bdef167c6d14352">cypherpunk42</a></strong> &raquo; 14. Feb 2015, 03:27 </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>loukingjr wrote:</cite>I updated my Windows 7 Pro guest today and had no audio issues.<br /><br />Make sure the audio isn't muted in the tray.  <img src="./images/smilies/icon_smile.gif" alt=":)" title="Smile" /></div></blockquote><br /><br />lol! Yeah, I don't want to make that big of a fool of myself so I always check those things first even when I'm certain I haven't changed any audio settings. <img src="./images/smilies/icon_smile.gif" alt=":)" title="Smile" /><br /><br />Just for reference -- are you running Mac OS X Yosemite?</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile312748">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=91094&amp;sid=3356a2f7989d7ac11bdef167c6d14352">cypherpunk42</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 7</dd><dd><strong>Joined:</strong> 13. Feb 2015, 23:31</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p312749" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=2&amp;p=312749&amp;sid=3356a2f7989d7ac11bdef167c6d14352" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p312749">Re: Audio not working after update to 4.3.22</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=312749&amp;sid=3356a2f7989d7ac11bdef167c6d14352#p312749"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=91094&amp;sid=3356a2f7989d7ac11bdef167c6d14352">cypherpunk42</a></strong> &raquo; 14. Feb 2015, 03:29 </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>socratis wrote:</cite>Same here, I updated about 20 clients and no differences in their capability to produce sound has changed.<br /><br />As for the abstract from your log, I get those too.</div></blockquote><br /><br />Okay, thanks -- then I know it's normal at least.<br /><br />Hmm.. Perhaps a good nights sleep will yield some inspiration as to where to start looking next.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile312749">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=91094&amp;sid=3356a2f7989d7ac11bdef167c6d14352">cypherpunk42</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 7</dd><dd><strong>Joined:</strong> 13. Feb 2015, 23:31</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p312751" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=2&amp;p=312751&amp;sid=3356a2f7989d7ac11bdef167c6d14352" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p312751">Re: Audio not working after update to 4.3.22</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=312751&amp;sid=3356a2f7989d7ac11bdef167c6d14352#p312751"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=30872&amp;sid=3356a2f7989d7ac11bdef167c6d14352" style="color: #3366CC;" class="username-coloured">loukingjr</a></strong> &raquo; 14. Feb 2015, 04:13 </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>cypherpunk42 wrote:</cite>Just for reference -- are you running Mac OS X Yosemite?</div></blockquote><br />Yes. Currently 10.10.3<br />The Audio settings for my guest are Core Audio and Intel HD Audio.<br /><br />Have you installed any new audio apps or played with any audio settings on the host or guest recently?</div>
+
+			<div id="sig312751" class="signature">OSX, Linux and Windows Hosts &amp; Guests<br />There are three groups of people. Those that can count and those that can't.</div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile312751">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=30872&amp;sid=3356a2f7989d7ac11bdef167c6d14352" style="color: #3366CC;" class="username-coloured">loukingjr</a>
+			</dt>
+
+			<dd>Volunteer</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 8683</dd><dd><strong>Joined:</strong> 30. Apr 2009, 09:45</dd>
+			<dd><strong>Primary OS:</strong> Mac OS X other</dd>
+		
+			<dd><strong>VBox Version:</strong> PUEL</dd>
+		
+			<dd><strong>Guest OSses:</strong> just about all that run</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p312782" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=2&amp;p=312782&amp;sid=3356a2f7989d7ac11bdef167c6d14352" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p312782">Re: Audio not working after update to 4.3.22</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=312782&amp;sid=3356a2f7989d7ac11bdef167c6d14352#p312782"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=91094&amp;sid=3356a2f7989d7ac11bdef167c6d14352">cypherpunk42</a></strong> &raquo; 14. Feb 2015, 14:38 </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>loukingjr wrote:</cite><blockquote><div><cite>cypherpunk42 wrote:</cite>Just for reference -- are you running Mac OS X Yosemite?</div></blockquote><br />Yes. Currently 10.10.3<br />The Audio settings for my guest are Core Audio and Intel HD Audio.<br /><br />Have you installed any new audio apps or played with any audio settings on the host or guest recently?</div></blockquote><br /><br />Same settings here.<br /><br />No, that's what feels odd about this. I had been watching a twitch stream in the guest (audio working), I closed the machine down, did some work (coding in gvim), run clang a few times (to build code), then later I wanted to watch a stream again, so I started VirtualBox, it prompted me about the upgrade, I installed it, started up vbox, upgraded the extensions, started up the guest (no sound, but I assumed it was because the guest additions needed to be upgraded), installed the guest additions, but still no sound. Just to be sure I shut everything down, rebooted the host and tried again, but I still had no sound. I did no system changes, no installations or uninstalls, between the point that it worked and when it stopped working.<br /><br />I just tried downgrading to .20, and then I get audio.<br /><br />It's become clear that it's a local problem, and it looks very much like a host issue -- so I'm afraid I'm on my own on this. But thanks anyway to those of you who replied!</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile312782">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=91094&amp;sid=3356a2f7989d7ac11bdef167c6d14352">cypherpunk42</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 7</dd><dd><strong>Joined:</strong> 13. Feb 2015, 23:31</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p312785" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=2&amp;p=312785&amp;sid=3356a2f7989d7ac11bdef167c6d14352" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p312785">Re: Audio not working after update to 4.3.22</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=312785&amp;sid=3356a2f7989d7ac11bdef167c6d14352#p312785"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=55237&amp;sid=3356a2f7989d7ac11bdef167c6d14352" style="color: #00AA00;" class="username-coloured">socratis</a></strong> &raquo; 14. Feb 2015, 15:23 </p>
+
+			
+
+			<div class="content">Try to clear the caches from within your guest. It works miracles sometimes. Look for tools that clear the persistent Flash cookies (for example BetterPrivacy for Firefox). I also had weird behavior with Flash going nuts if I unplugged and re-plugged my headphones. It would crack and stop and mute and ... name it.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile312785">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=55237&amp;sid=3356a2f7989d7ac11bdef167c6d14352" style="color: #00AA00;" class="username-coloured">socratis</a>
+			</dt>
+
+			<dd>Site Moderator</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 3973</dd><dd><strong>Joined:</strong> 22. Oct 2010, 11:03</dd><dd><strong>Location:</strong> Greece</dd>
+			<dd><strong>Primary OS:</strong> Mac OS X other</dd>
+		
+			<dd><strong>VBox Version:</strong> PUEL</dd>
+		
+			<dd><strong>Guest OSses:</strong> Win(*&gt;98), Linux*, OSX&gt;10.5</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p312787" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=2&amp;p=312787&amp;sid=3356a2f7989d7ac11bdef167c6d14352" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p312787">Re: Audio not working after update to 4.3.22</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=312787&amp;sid=3356a2f7989d7ac11bdef167c6d14352#p312787"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=91094&amp;sid=3356a2f7989d7ac11bdef167c6d14352">cypherpunk42</a></strong> &raquo; 14. Feb 2015, 15:40 </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>socratis wrote:</cite>Try to clear the caches from within your guest. It works miracles sometimes. Look for tools that clear the persistent Flash cookies (for example BetterPrivacy for Firefox). I also had weird behavior with Flash going nuts if I unplugged and re-plugged my headphones. It would crack and stop and mute and ... name it.</div></blockquote><br /><br />The problem is unfortunately deeper than that; I get no sound from the guest at all (no system sounds, no sound from a stand-alone music player, etc). Though the applications in the guest aren't complaining; so from their perspective the audio device exists and is working.<br /><br />I think there's &quot;simply&quot; a bizarre problem with CoreAudio on my host system which (for whatever reason) 4.3.22 manages to trigger. I'll try upgrading VirtualBox on my MacBook. I have a feeling I won't encounter the problem there (given that the problem seems to be pretty unique).</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile312787">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=91094&amp;sid=3356a2f7989d7ac11bdef167c6d14352">cypherpunk42</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 7</dd><dd><strong>Joined:</strong> 13. Feb 2015, 23:31</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p312789" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=2&amp;p=312789&amp;sid=3356a2f7989d7ac11bdef167c6d14352" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p312789">Re: Audio not working after update to 4.3.22</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=312789&amp;sid=3356a2f7989d7ac11bdef167c6d14352#p312789"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=55237&amp;sid=3356a2f7989d7ac11bdef167c6d14352" style="color: #00AA00;" class="username-coloured">socratis</a></strong> &raquo; 14. Feb 2015, 15:49 </p>
+
+			
+
+			<div class="content">OK, final thoughts... Take a look at the &quot;Audio MIDI Setup&quot; in your Utilities folder (of your host). See what the frequencies it reports are. You should be in the 44100 Hz, 2ch, 16bit.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile312789">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=55237&amp;sid=3356a2f7989d7ac11bdef167c6d14352" style="color: #00AA00;" class="username-coloured">socratis</a>
+			</dt>
+
+			<dd>Site Moderator</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 3973</dd><dd><strong>Joined:</strong> 22. Oct 2010, 11:03</dd><dd><strong>Location:</strong> Greece</dd>
+			<dd><strong>Primary OS:</strong> Mac OS X other</dd>
+		
+			<dd><strong>VBox Version:</strong> PUEL</dd>
+		
+			<dd><strong>Guest OSses:</strong> Win(*&gt;98), Linux*, OSX&gt;10.5</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p312794" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=2&amp;p=312794&amp;sid=3356a2f7989d7ac11bdef167c6d14352" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p312794">Re: Audio not working after update to 4.3.22</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=312794&amp;sid=3356a2f7989d7ac11bdef167c6d14352#p312794"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=30872&amp;sid=3356a2f7989d7ac11bdef167c6d14352" style="color: #3366CC;" class="username-coloured">loukingjr</a></strong> &raquo; 14. Feb 2015, 16:15 </p>
+
+			
+
+			<div class="content">Something you could try if you haven't already is to switch the audio controller to ICH AC97 and see if the audio comes back. If not, you can always switch it back. Also check the device manager in the guest and see if there is a problem with the sound driver.</div>
+
+			<div id="sig312794" class="signature">OSX, Linux and Windows Hosts &amp; Guests<br />There are three groups of people. Those that can count and those that can't.</div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile312794">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=30872&amp;sid=3356a2f7989d7ac11bdef167c6d14352" style="color: #3366CC;" class="username-coloured">loukingjr</a>
+			</dt>
+
+			<dd>Volunteer</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 8683</dd><dd><strong>Joined:</strong> 30. Apr 2009, 09:45</dd>
+			<dd><strong>Primary OS:</strong> Mac OS X other</dd>
+		
+			<dd><strong>VBox Version:</strong> PUEL</dd>
+		
+			<dd><strong>Guest OSses:</strong> just about all that run</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p312860" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=2&amp;p=312860&amp;sid=3356a2f7989d7ac11bdef167c6d14352" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p312860">Re: Audio not working after update to 4.3.22</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=312860&amp;sid=3356a2f7989d7ac11bdef167c6d14352#p312860"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=14021&amp;sid=3356a2f7989d7ac11bdef167c6d14352">smithlar</a></strong> &raquo; 15. Feb 2015, 15:29 </p>
+
+			
+
+			<div class="content">My situation was slightly different.<br /><br />I have a Linux host, openSUSE 13.2, 64 bit.<br />My Win 7 Pro 64 bit guest audio was not functioning after<br />upgrading VirtualBox to 4.3.22 from 4.3.20 - no System sounds on boot, login, etc.<br />The guest was restarted at least 3 times after the VB upgrade, but still no audio.<br />I didn't even realize it was not working until I noticed this forum thread; I checked my<br />guest, and sure enough, no audio.<br /><br />In my case the fix turned out to be simple:<br /><br />- I opened the Volume Control on the task bar<br />- I selected, then de-selected, Mute<br />- I dragged the volume slider up a little, then released it - a beep occurred<br />- I dragged the volume slider back down to the original position, then released it - a beep occurred<br />- I shut down the guest<br />- I restarted the guest - all sounds worked as expected, including the startup, and login sounds.<br /><br />I believe that after the VB update, Windows for seme reason saw the sound config as muted.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile312860">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=14021&amp;sid=3356a2f7989d7ac11bdef167c6d14352">smithlar</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 62</dd><dd><strong>Joined:</strong> 9. May 2008, 15:54</dd><dd><strong>Location:</strong> Texas, USA</dd>
+			<dd><strong>Primary OS:</strong> openSUSE</dd>
+		
+			<dd><strong>VBox Version:</strong> PUEL</dd>
+		
+			<dd><strong>Guest OSses:</strong> WinXP32 WinXP64 Win7-32 Win7-64 openSUSE64 OS2 Win2008</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p313066" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=2&amp;p=313066&amp;sid=3356a2f7989d7ac11bdef167c6d14352" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p313066">Re: Audio not working after update to 4.3.22</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=313066&amp;sid=3356a2f7989d7ac11bdef167c6d14352#p313066"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=91094&amp;sid=3356a2f7989d7ac11bdef167c6d14352">cypherpunk42</a></strong> &raquo; 17. Feb 2015, 00:35 </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>smithlar wrote:</cite>My situation was slightly different.<br />[...]<br /><br /></div></blockquote><br /><br />That did the trick! Muting/unmuting didn't seem to do anything, but fiddling with the volume control did. Strange; the volume wasn't at zero <span style="font-style: italic">graphically</span>, but I guess somewhere internally it was.<br /><br />Peculiar, but I'm glad the solution was simple.<br /><br />Thanks!</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile313066">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=91094&amp;sid=3356a2f7989d7ac11bdef167c6d14352">cypherpunk42</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 7</dd><dd><strong>Joined:</strong> 13. Feb 2015, 23:31</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<form id="viewtopic" method="post" action="./viewtopic.php?f=2&amp;t=66084&amp;sid=3356a2f7989d7ac11bdef167c6d14352">
+
+	<fieldset class="display-options" style="margin-top: 0; ">
+		<a href="./viewtopic.php?f=2&amp;t=66084&amp;sid=3356a2f7989d7ac11bdef167c6d14352&amp;start=15" class="right-box right">Next</a>
+		<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select> <input type="submit" name="sort" value="Go" class="button2" /></label>
+		
+	</fieldset>
+
+	</form>
+	<hr />
+
+
+<div class="topic-actions">
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="./posting.php?mode=reply&amp;f=2&amp;t=66084&amp;sid=3356a2f7989d7ac11bdef167c6d14352" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="pagination">
+			41 posts
+			 &bull; <a href="#" onclick="jumpto(); return false;" title="Click to jump to page…">Page <strong>1</strong> of <strong>3</strong></a> &bull; <span><strong>1</strong><span class="page-sep">, </span><a href="./viewtopic.php?f=2&amp;t=66084&amp;sid=3356a2f7989d7ac11bdef167c6d14352&amp;start=15">2</a><span class="page-sep">, </span><a href="./viewtopic.php?f=2&amp;t=66084&amp;sid=3356a2f7989d7ac11bdef167c6d14352&amp;start=30">3</a></span>
+		</div>
+	
+</div>
+
+
+	<p></p><p><a href="./viewforum.php?f=2&amp;sid=3356a2f7989d7ac11bdef167c6d14352" class="left-box left" accesskey="r">Return to Windows Guests</a></p>
+
+	<form method="post" id="jumpbox" action="./viewforum.php?sid=3356a2f7989d7ac11bdef167c6d14352" onsubmit="if(this.f.value == -1){return false;}">
+
+	
+		<fieldset class="jumpbox">
+	
+			<label for="f" accesskey="j">Jump to:</label>
+			<select name="f" id="f" onchange="if(this.options[this.selectedIndex].value != -1){ document.forms['jumpbox'].submit() }">
+			
+				<option value="-1">Select a forum</option>
+			<option value="-1">------------------</option>
+				<option value="12">General</option>
+			
+				<option value="23">&nbsp; &nbsp;Howtos and Tutorials</option>
+			
+				<option value="24">&nbsp; &nbsp;&nbsp; &nbsp;Rules and FAQ</option>
+			
+				<option value="35">&nbsp; &nbsp;&nbsp; &nbsp;Generic Advice</option>
+			
+				<option value="31">&nbsp; &nbsp;&nbsp; &nbsp;Building VirtualBox</option>
+			
+				<option value="25">&nbsp; &nbsp;&nbsp; &nbsp;Windows Hosts</option>
+			
+				<option value="26">&nbsp; &nbsp;&nbsp; &nbsp;Linux Hosts</option>
+			
+				<option value="27">&nbsp; &nbsp;&nbsp; &nbsp;Other Hosts</option>
+			
+				<option value="28">&nbsp; &nbsp;&nbsp; &nbsp;Windows Guests</option>
+			
+				<option value="29">&nbsp; &nbsp;&nbsp; &nbsp;Linux Guests</option>
+			
+				<option value="30">&nbsp; &nbsp;&nbsp; &nbsp;Other Guests</option>
+			
+				<option value="1">&nbsp; &nbsp;Using VirtualBox</option>
+			
+				<option value="6">&nbsp; &nbsp;VirtualBox on Windows Hosts</option>
+			
+				<option value="38">&nbsp; &nbsp;&nbsp; &nbsp;VirtualBox on Windows pre-releases</option>
+			
+				<option value="7">&nbsp; &nbsp;VirtualBox on Linux Hosts</option>
+			
+				<option value="8">&nbsp; &nbsp;VirtualBox on Mac OS X Hosts</option>
+			
+				<option value="39">&nbsp; &nbsp;&nbsp; &nbsp;VirtualBox on Mac OS X pre-releases</option>
+			
+				<option value="11">&nbsp; &nbsp;VirtualBox on Solaris Hosts</option>
+			
+				<option value="40">&nbsp; &nbsp;VirtualBox on Other Hosts</option>
+			
+				<option value="9">&nbsp; &nbsp;Suggestions</option>
+			
+				<option value="32">&nbsp; &nbsp;Third Party Applications</option>
+			
+				<option value="13">Guest systems</option>
+			
+				<option value="2" selected="selected">&nbsp; &nbsp;Windows Guests</option>
+			
+				<option value="3">&nbsp; &nbsp;Linux Guests</option>
+			
+				<option value="20">&nbsp; &nbsp;Solaris Guests</option>
+			
+				<option value="22">&nbsp; &nbsp;Mac OS X Guests</option>
+			
+				<option value="4">&nbsp; &nbsp;Other Guests</option>
+			
+				<option value="14">Deutschsprachige Anwender</option>
+			
+				<option value="5">&nbsp; &nbsp;Allgemeine Diskussionen</option>
+			
+				<option value="33">VirtualBox Programming</option>
+			
+				<option value="34">&nbsp; &nbsp;The VirtualBox API</option>
+			
+				<option value="10">&nbsp; &nbsp;VirtualBox OSE</option>
+			
+				<option value="17">Special Purpose</option>
+			
+				<option value="15">&nbsp; &nbsp;VirtualBox Beta / Release Candidate Feedback</option>
+			
+				<option value="36">&nbsp; &nbsp;&nbsp; &nbsp;Pre-Beta 5.1 Postings</option>
+			
+			</select>
+			<input type="submit" value="Go" class="button2" />
+		</fieldset>
+	</form>
+
+
+	<h3>Who is online</h3>
+	<p>Users browsing this forum: No registered users and 26 guests</p>
+</div>
+
+<div id="page-footer">
+
+	<div class="navbar">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<ul class="linklist">
+			<li class="icon-home"><a href="./index.php?sid=3356a2f7989d7ac11bdef167c6d14352">Board index</a></li>
+				
+			<li class="rightside"><a href="./memberlist.php?mode=leaders&amp;sid=3356a2f7989d7ac11bdef167c6d14352">The team</a> &bull; <a href="./ucp.php?mode=delete_cookies&amp;sid=3356a2f7989d7ac11bdef167c6d14352">Delete all board cookies</a> &bull; All times are UTC + 1 hour [ <abbr title="Daylight Saving Time">DST</abbr> ]</li>
+		</ul>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+ 		<div class="copyright" style="align: center;">
+ 	<table class="footer" cellpadding="5" cellspacing="5" width="100%">
+ 	  <tbody>
+ 	    <tr style="text-align: center;" valign="top">
+ 	      <td>Get VirtualBox<br />
+ 	        <a href="http://www.virtualbox.org/wiki/Downloads">
+ 	          <img src="/styles/prosilver/imageset/vbox_footer_logo.png" alt="Get VirtualBox" height="35"  width="108" /></a>
+ 	      </td>
+ 	      <td>
+ 	        Forum powered by <a href="http://www.phpbb.com/">phpBB</a> &copy; phpBB Group
+		
+ 	        <br />By any use of this Website, you agree to be bound by these <br />
+ 	        <big><b><a href="http://www.oracle.com/us/legal/terms/index.html">Policies and Terms of Use</a></b></big>
+ 	      </td>
+ 	      <td>Sponsored by<br />
+                 <a href="http://www.oracle.com/">
+ 	          <img src="/styles/prosilver/imageset/logo_oracle_footer.gif" height="29" width="100" alt="Sponsored by ORACLE" /></a>
+ 	      </td>
+ 	    </tr> 
+ 	  </tbody>
+ 		 </table>
+	</div>
+</div>
+
+<div>
+	<a id="bottom" name="bottom" accesskey="z"></a>
+	
+</div>
+
+</body>
+</html>

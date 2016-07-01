@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AlarmsDisabled</key>
+	<false/>
+	<key>Availability</key>
+	<true/>
+	<key>CTag</key>
+	<string>63603016116</string>
+	<key>CalendarPath</key>
+	<string>/caldav/v2/liuyuying90%40live.cn/events/</string>
+	<key>CanBePublished</key>
+	<false/>
+	<key>Checked</key>
+	<integer>1</integer>
+	<key>Color</key>
+	<string>#1B887AFF</string>
+	<key>ColorEditable</key>
+	<true/>
+	<key>Delegate</key>
+	<false/>
+	<key>Editable</key>
+	<true/>
+	<key>Enabled</key>
+	<true/>
+	<key>EventContainer</key>
+	<true/>
+	<key>Key</key>
+	<string>857CE844-BE35-4352-9681-CE982E0B0A65</string>
+	<key>Notes</key>
+	<string>liuyuying90@live.cn</string>
+	<key>Order</key>
+	<integer>3</integer>
+	<key>OwnerPrincipalPath</key>
+	<string>/caldav/v2/liuyuying90%40live.cn/user/</string>
+	<key>Permission</key>
+	<integer>4</integer>
+	<key>Renameable</key>
+	<true/>
+	<key>ShareDefaultAlarmSettings</key>
+	<true/>
+	<key>TaskContainer</key>
+	<false/>
+	<key>TimeZone</key>
+	<string>America/New_York</string>
+	<key>Title</key>
+	<string>liuyuying90@live.cn</string>
+	<key>Type</key>
+	<string>CalDAV</string>
+</dict>
+</plist>

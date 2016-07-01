@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Apple Inc.//Mac OS X 10.11.5//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+TRANSP:TRANSPARENT
+DTEND;VALUE=DATE:20151013
+LAST-MODIFIED:20160603T234750Z
+UID:20151012_60o30dr5c8o38e1g60o30dr4co@google.com
+DTSTAMP:20160603T234750Z
+DESCRIPTION:Public holiday in: Alabama\, American Samoa\, Arizona\, Colo
+ rado\, Connecticut\, District of Columbia\, Georgia\, Idaho\, Illinois\,
+  Indiana\, Iowa\, Kansas\, Kentucky\, Louisiana\, Maine\, Maryland\, Mas
+ sachusetts\, Mississippi\, Missouri\, Montana\, Nebraska\, New Hampshire
+ \, New Jersey\, New Mexico\, New York\, North Carolina\, Northern Marian
+ a Islands\, Ohio\, Oklahoma\, Pennsylvania\, Rhode Island\, South Caroli
+ na\, Tennessee\, Utah\, Virgin Islands\, Virginia\, West Virginia
+STATUS:CONFIRMED
+X-APPLE-SCHEDULETAG:"e4d9e2030283b1aa"
+CLASS:PUBLIC
+X-APPLE-SERVERFILENAME:20151012_60o30dr5c8o38e1g60o30dr4co%40google.com.
+ ics
+SEQUENCE:0
+X-APPLE-EWS-BUSYSTATUS:FREE
+SUMMARY:Columbus Day (regional holiday)
+DTSTART;VALUE=DATE:20151012
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+CREATED:20160603T234750Z
+X-APPLE-ETAG:"63600680870"
+BEGIN:VALARM
+X-WR-ALARMUID:D642A9A6-152D-449F-99D0-2C62F7FB0F90
+UID:D642A9A6-152D-449F-99D0-2C62F7FB0F90
+TRIGGER:-PT15H
+X-APPLE-DEFAULT-ALARM:TRUE
+ATTACH;VALUE=URI:Basso
+ACTION:AUDIO
+END:VALARM
+END:VEVENT
+END:VCALENDAR

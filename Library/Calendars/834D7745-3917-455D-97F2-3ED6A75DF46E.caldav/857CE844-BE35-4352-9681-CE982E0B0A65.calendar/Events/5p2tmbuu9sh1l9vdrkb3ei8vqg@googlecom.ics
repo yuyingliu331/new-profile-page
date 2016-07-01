@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Apple Inc.//Mac OS X 10.11.5//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+ATTENDEE;CN="sam liu";CUTYPE=INDIVIDUAL;PARTSTAT=ACCEPTED;ROLE=REQ-PARTI
+ CIPANT;X-NUM-GUESTS=0:mailto:liuyuying90@live.cn
+DTEND;TZID=America/Los_Angeles:20160622T083000
+TRANSP:OPAQUE
+ORGANIZER;CN="Hannah Wood":mailto:hannah.ko.wood@gmail.com
+UID:5p2tmbuu9sh1l9vdrkb3ei8vqg@google.com
+DTSTAMP:20160615T205948Z
+LAST-MODIFIED:20160615T205948Z
+DESCRIPTION:Attendee:\nYuying Liu (liuyuying90@live.cn)\n\nSubject:\nFul
+ lstack Academy Meeting\n\nCustomer's cancel/reschedule link: \nhttps://s
+ ecure.scheduleonce.com/fullstack-hannah&Params=IPLa6BkbZ-RLCnxbtRc9*GBcS
+ ECpYMoK\n\nTracking ID:\nA2FA0073\n\nInformation entered by the customer
+ :\nHi Hannah\, \n\nMy skype ID is sammy.liu5. I am looking forward to ta
+ lking to you. \n\nThanks! \n\nYuying (Samantha) Liu\n\n
+STATUS:CONFIRMED
+X-APPLE-SCHEDULETAG:"4fc23d91f9a517f3"
+X-APPLE-SERVERFILENAME:5p2tmbuu9sh1l9vdrkb3ei8vqg%40google.com.ics
+SEQUENCE:0
+X-APPLE-EWS-BUSYSTATUS:BUSY
+SUMMARY:Yuying Liu - Fullstack Academy Meeting
+DTSTART;TZID=America/Los_Angeles:20160622T073000
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+CREATED:20160615T205948Z
+X-APPLE-ETAG:"63601707588"
+BEGIN:VALARM
+X-WR-ALARMUID:7AEEA05D-AFA4-4942-9428-DB99A2C2C0C8
+UID:7AEEA05D-AFA4-4942-9428-DB99A2C2C0C8
+TRIGGER:-PT30M
+DESCRIPTION:This is an event reminder
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR

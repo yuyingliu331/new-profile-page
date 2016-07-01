@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Apple Inc.//Mac OS X 10.11.5//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+ATTENDEE;CN="sam liu";CUTYPE=INDIVIDUAL;PARTSTAT=ACCEPTED;ROLE=REQ-PARTI
+ CIPANT;X-NUM-GUESTS=0:mailto:liuyuying90@live.cn
+DTEND;TZID=America/Los_Angeles:20160624T091500
+TRANSP:OPAQUE
+ORGANIZER;CN="Shanna Gregory (Grace Hopper Academy)":mailto:yealthy.com_
+ 7278obkkqu55i771mqoavifnbg@group.calendar.google.com
+UID:4kral0v6ppv3m1s42a92b6an08@google.com
+DTSTAMP:20160623T201519Z
+LOCATION:206-218-9012
+LAST-MODIFIED:20160623T201519Z
+DESCRIPTION:Attendee:\nYuying Liu (Samantha) (liuyuying90@live.cn)\n\nSu
+ bject:\nCall for Grace Hopper Admission\n\nCustomer's cancel/reschedule 
+ link: \nhttps://secure.scheduleonce.com/gracehopperacademy&Params=IPLa6B
+ kbZ-RsnCrcKSq*YhFHVvhWWJGo\n\nTracking ID:\n0DDF0075\n\nCompany:\nPricew
+ aterhouseCoopers\n\nPhone:\n206-218-9012\n\n\n
+STATUS:CONFIRMED
+X-APPLE-SCHEDULETAG:"15dc4a2113f185eb"
+X-APPLE-SERVERFILENAME:4kral0v6ppv3m1s42a92b6an08%40google.com.ics
+SEQUENCE:0
+X-APPLE-EWS-BUSYSTATUS:BUSY
+SUMMARY:Yuying Liu (Samantha) from PricewaterhouseCoopers - Call for Gra
+ ce Hopper Admission
+DTSTART;TZID=America/Los_Angeles:20160624T090000
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+CREATED:20160623T201518Z
+X-APPLE-ETAG:"63602396119"
+BEGIN:VALARM
+X-WR-ALARMUID:025AE6D5-4980-4860-8865-56434683A547
+UID:025AE6D5-4980-4860-8865-56434683A547
+TRIGGER:-PT30M
+DESCRIPTION:This is an event reminder
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR

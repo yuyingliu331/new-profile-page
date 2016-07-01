@@ -1,0 +1,1064 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-gb" xml:lang="en-gb">
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-language" content="en-gb" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<title>virtualbox.org &bull; View topic - no audio driver on Windows 7 (64bit) guest</title>
+
+
+
+<!--
+	phpBB style name: prosilver
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:
+-->
+
+<script type="text/javascript">
+// <![CDATA[
+	var jump_page = 'Enter the page number you wish to go to:';
+	var on_page = '1';
+	var per_page = '15';
+	var base_url = './viewtopic.php?f=7&amp;t=13694';
+	var style_cookie = 'phpBBstyle';
+	var style_cookie_settings = '; path=/; domain=forums.virtualbox.org; secure';
+	var onload_functions = new Array();
+	var onunload_functions = new Array();
+
+	
+
+	/**
+	* Find a member
+	*/
+	function find_username(url)
+	{
+		popup(url, 760, 570, '_usersearch');
+		return false;
+	}
+
+	/**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+	window.onload = function()
+	{
+		for (var i = 0; i < onload_functions.length; i++)
+		{
+			eval(onload_functions[i]);
+		}
+	};
+
+	window.onunload = function()
+	{
+		for (var i = 0; i < onunload_functions.length; i++)
+		{
+			eval(onunload_functions[i]);
+		}
+	};
+
+// ]]>
+</script>
+<script type="text/javascript" src="./styles/prosilver/template/styleswitcher.js"></script>
+<script type="text/javascript" src="./styles/prosilver/template/forum_fn.js"></script>
+
+<link href="./styles/prosilver/theme/print.css" rel="stylesheet" type="text/css" media="print" title="printonly" />
+<link href="./style.php?id=1&amp;lang=en" rel="stylesheet" type="text/css" media="screen, projection" />
+
+<link href="./styles/prosilver/theme/normal.css" rel="stylesheet" type="text/css" title="A" />
+<link href="./styles/prosilver/theme/medium.css" rel="alternate stylesheet" type="text/css" title="A+" />
+<link href="./styles/prosilver/theme/large.css" rel="alternate stylesheet" type="text/css" title="A++" />
+
+
+
+</head>
+
+<body id="phpbb" class="section-viewtopic ltr">
+
+<div id="wrap">
+	<a id="top" name="top" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<div id="site-description">
+				<a href="./index.php" title="Board index" id="logo"><img src="./styles/prosilver/imageset/vbox_94px.png" alt="Board index" title="Board index" /></a>
+				<h1>virtualbox.org</h1>
+				<p>End user forums for VirtualBox</p>
+			</div>
+
+		
+			<div id="search-box">
+				<form action="./search.php" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="text" maxlength="128" title="Search for keywords" class="inputbox search" value="Search…" onclick="if(this.value=='Search…')this.value='';" onblur="if(this.value=='')this.value='Search…';" />
+					<input class="button2" value="Search" type="submit" /><br />
+					<a href="./search.php" title="View the advanced search options">Advanced search</a> 
+				</fieldset>
+				</form>
+			</div>
+		
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+
+		<div class="navbar">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<ul class="linklist navlinks">
+				<li class="icon-home"><a href="./index.php" accesskey="h">Board index</a>  <strong>&#8249;</strong> <a href="./viewforum.php?f=12">General</a> <strong>&#8249;</strong> <a href="./viewforum.php?f=7">VirtualBox on Linux Hosts</a></li>
+
+				<li class="rightside"><a href="#" onclick="fontsizeup(); return false;" onkeypress="return fontsizeup(event);" class="fontsize" title="Change font size">Change font size</a></li>
+
+				<li class="rightside"><a href="./viewtopic.php?f=7&amp;t=13694&amp;view=print" title="Print view" accesskey="p" class="print">Print view</a></li>
+			</ul>
+
+			
+
+			<ul class="linklist rightside">
+				<li class="icon-faq"><a href="./faq.php" title="Frequently Asked Questions">FAQ</a></li>
+				
+					<li class="icon-logout"><a href="./login.html" title="Login" accesskey="x">Login</a></li>
+				
+			</ul>
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+
+	</div>
+
+	<a name="start_here"></a>
+	<div id="page-body">
+		
+<h2><a href="./viewtopic.php?f=7&amp;t=13694">no audio driver on Windows 7 (64bit) guest</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body --><div style="display: none !important;">Discussions related to using VirtualBox on Linux hosts.<br /></div>
+
+<div class="topic-actions">
+
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="./posting.php?mode=reply&amp;f=7&amp;t=13694" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php">
+			<fieldset>
+				<input class="inputbox search tiny"  type="text" name="keywords" id="search_keywords" size="20" value="Search this topic…" onclick="if(this.value=='Search this topic…')this.value='';" onblur="if(this.value=='')this.value='Search this topic…';" />
+				<input class="button2" type="submit" value="Search" />
+				<input type="hidden" name="t" value="13694" />
+<input type="hidden" name="sf" value="msgonly" />
+
+			</fieldset>
+			</form>
+		</div>
+	
+		<div class="pagination">
+			24 posts
+			 &bull; <a href="#" onclick="jumpto(); return false;" title="Click to jump to page…">Page <strong>1</strong> of <strong>2</strong></a> &bull; <span><strong>1</strong><span class="page-sep">, </span><a href="./viewtopic.php?f=7&amp;t=13694&amp;start=15">2</a></span>
+		</div>
+	
+
+</div>
+<div class="clear"></div>
+
+
+	<div id="p56543" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=7&amp;p=56543" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 class="first"><a href="#p56543">no audio driver on Windows 7 (64bit) guest</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=56543#p56543"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=23013">GuinnessTrinker</a></strong> &raquo; 24. Jan 2009, 19:01 </p>
+
+			
+
+			<div class="content">Host: Ubuntu 8.10 (64Bit)
+<br />virtualBox 2.1.2
+<br />guest Windows 7 (64bit)
+<br />
+<br />installation: no problem
+<br />
+<br />&quot;geräteerweiterungen installieren&quot;: no problem
+<br />
+<br />audio device driver on virtualbox: pulse audio / ICH AC97
+<br />
+<br />windows 7 device manager: audiocontroller for multimedia
+<br />
+<br />
+<br />error:  driver not found     <img src="./images/smilies/icon_question.gif" alt=":?:" title="Question" /></div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile56543">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=23013">GuinnessTrinker</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 5</dd><dd><strong>Joined:</strong> 24. Jan 2009, 18:52</dd><dd><strong>Location:</strong> Germany</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p56547" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=7&amp;p=56547" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p56547"></a></h3>
+			<p class="author"><a href="./viewtopic.php?p=56547#p56547"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=515" style="color: #3366CC;" class="username-coloured">stefan.becker</a></strong> &raquo; 24. Jan 2009, 19:23 </p>
+
+			
+
+			<div class="content">Search Forum vor &quot;Vista realtek&quot;.</div>
+
+			<div id="sig56547" class="signature">German Howto (Linux): <!-- m --><a class="postlink" href="http://www.linuxforen.de/forums/showthread.php?t=236444">http://www.linuxforen.de/forums/showthread.php?t=236444</a><!-- m -->
+<br />User Manual / Download Section: <!-- m --><a class="postlink" href="http://www.virtualbox.de/wiki/Downloads">http://www.virtualbox.de/wiki/Downloads</a><!-- m -->
+<br />FAQ: <!-- m --><a class="postlink" href="http://www.virtualbox.de/wiki/User_FAQ">http://www.virtualbox.de/wiki/User_FAQ</a><!-- m --> <!-- m --><a class="postlink" href="http://forums.virtualbox.org/viewtopic.php?t=8669">http://forums.virtualbox.org/viewtopic.php?t=8669</a><!-- m --></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile56547">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=515" style="color: #3366CC;" class="username-coloured">stefan.becker</a>
+			</dt>
+
+			<dd>Volunteer</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 7319</dd><dd><strong>Joined:</strong> 7. Jun 2007, 21:53</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p56563" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=7&amp;p=56563" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p56563"></a></h3>
+			<p class="author"><a href="./viewtopic.php?p=56563#p56563"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=12623" style="color: #3366CC;" class="username-coloured">Sasquatch</a></strong> &raquo; 24. Jan 2009, 20:23 </p>
+
+			
+
+			<div class="content">Did you check the Windows Update site from Windows 7? It should provide you with the driver.</div>
+
+			<div id="sig56563" class="signature">Read the <a href="http://forums.virtualbox.org/viewtopic.php?t=8208" class="postlink">Forum Posting Guide</a> before opening a topic.<br /><a href="http://forums.virtualbox.org/viewtopic.php?t=8669" class="postlink">VirtualBox FAQ</a>: Check this before asking questions.<br /><a href="http://www.virtualbox.org/manual/UserManual.html" class="postlink">Online User Manual</a>: A must read if you want to know what we're talking about.<br /><a href="http://forums.virtualbox.org/viewtopic.php?t=15679" class="postlink">Howto: Install Linux Guest Additions</a><br /><a href="http://forums.virtualbox.org/viewtopic.php?t=15868" class="postlink">Howto: Use Shared Folders on Linux Guest</a><br />See the Tutorials and FAQ section at the top of the Forum for more guides.<br />Try searching the forums first with Google and add the site filter for this forum.<br />E.g. <span style="font-weight: bold">install guest additions site:forums.virtualbox.org</span><br /><br />Retired from this Forum since OSSO introduction.</div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile56563">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=12623" style="color: #3366CC;" class="username-coloured">Sasquatch</a>
+			</dt>
+
+			<dd>Volunteer</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 17800</dd><dd><strong>Joined:</strong> 17. Mar 2008, 13:41</dd><dd><strong>Location:</strong> /dev/random</dd>
+			<dd><strong>Primary OS:</strong> Debian other</dd>
+		
+			<dd><strong>VBox Version:</strong> PUEL</dd>
+		
+			<dd><strong>Guest OSses:</strong> Windows XP, Windows 7, Linux</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p56578" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=7&amp;p=56578" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p56578"></a></h3>
+			<p class="author"><a href="./viewtopic.php?p=56578#p56578"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=23013">GuinnessTrinker</a></strong> &raquo; 24. Jan 2009, 20:44 </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>Sasquatch wrote:</cite>Did you check the Windows Update site from Windows 7? It should provide you with the driver.</div></blockquote>
+<br />
+<br />yes. no success.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile56578">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=23013">GuinnessTrinker</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 5</dd><dd><strong>Joined:</strong> 24. Jan 2009, 18:52</dd><dd><strong>Location:</strong> Germany</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p56611" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=7&amp;p=56611" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p56611"></a></h3>
+			<p class="author"><a href="./viewtopic.php?p=56611#p56611"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=23013">GuinnessTrinker</a></strong> &raquo; 24. Jan 2009, 22:26 </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>stefan.becker wrote:</cite>Search Forum vor &quot;Vista realtek&quot;.</div></blockquote>
+<br />
+<br />my system has a
+<br /> Audio device: Intel Corporation 82801H (ICH8 Family) HD Audio Controller (rev 03)
+<br />
+<br />not a realtec
+<br />
+<br />do you really think a realtec driver could help?</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile56611">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=23013">GuinnessTrinker</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 5</dd><dd><strong>Joined:</strong> 24. Jan 2009, 18:52</dd><dd><strong>Location:</strong> Germany</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p56622" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=7&amp;p=56622" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p56622"></a></h3>
+			<p class="author"><a href="./viewtopic.php?p=56622#p56622"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=515" style="color: #3366CC;" class="username-coloured">stefan.becker</a></strong> &raquo; 24. Jan 2009, 23:16 </p>
+
+			
+
+			<div class="content">Doesnt interest what hardware the host has.
+<br />
+<br />In the guest you need a realtek audio codec.
+<br />
+<br />But first try to disable audio, then restart, then enable again. It should be found by windows update. If not: <!-- m --><a class="postlink" href="http://www.start64.com/index.php?option=com_content&amp;task=view&amp;id=545&amp;Itemid=108">http://www.start64.com/index.php?option ... Itemid=108</a><!-- m --></div>
+
+			<div id="sig56622" class="signature">German Howto (Linux): <!-- m --><a class="postlink" href="http://www.linuxforen.de/forums/showthread.php?t=236444">http://www.linuxforen.de/forums/showthread.php?t=236444</a><!-- m -->
+<br />User Manual / Download Section: <!-- m --><a class="postlink" href="http://www.virtualbox.de/wiki/Downloads">http://www.virtualbox.de/wiki/Downloads</a><!-- m -->
+<br />FAQ: <!-- m --><a class="postlink" href="http://www.virtualbox.de/wiki/User_FAQ">http://www.virtualbox.de/wiki/User_FAQ</a><!-- m --> <!-- m --><a class="postlink" href="http://forums.virtualbox.org/viewtopic.php?t=8669">http://forums.virtualbox.org/viewtopic.php?t=8669</a><!-- m --></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile56622">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=515" style="color: #3366CC;" class="username-coloured">stefan.becker</a>
+			</dt>
+
+			<dd>Volunteer</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 7319</dd><dd><strong>Joined:</strong> 7. Jun 2007, 21:53</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p56634" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=7&amp;p=56634" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p56634"></a></h3>
+			<p class="author"><a href="./viewtopic.php?p=56634#p56634"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=23013">GuinnessTrinker</a></strong> &raquo; 25. Jan 2009, 00:09 </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>stefan.becker wrote:</cite>Doesnt interest what hardware the host has.<br /><br />In the guest you need a realtek audio codec.<br /><br />But first try to disable audio, then restart, then enable again. It should be found by windows update. If not: <!-- m --><a class="postlink" href="http://www.start64.com/index.php?option=com_content&amp;task=view&amp;id=545&amp;Itemid=108">http://www.start64.com/index.php?option ... Itemid=108</a><!-- m --></div></blockquote>
+<br />Your link is broken. Other links at realte are (very) slow.
+<br />I used this. Its the latest driver:
+<br />
+<br /><!-- m --><a class="postlink" href="http://www.download3k.com/Install-Realtek-AC-97-Vista-Driver.html">http://www.download3k.com/Install-Realt ... river.html</a><!-- m -->
+<br />
+<br />It works!!
+<br />Thanks a lot for that hint.
+<br />
+<br />Klaus</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile56634">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=23013">GuinnessTrinker</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 5</dd><dd><strong>Joined:</strong> 24. Jan 2009, 18:52</dd><dd><strong>Location:</strong> Germany</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p56645" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=7&amp;p=56645" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p56645"></a></h3>
+			<p class="author"><a href="./viewtopic.php?p=56645#p56645"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=12623" style="color: #3366CC;" class="username-coloured">Sasquatch</a></strong> &raquo; 25. Jan 2009, 01:08 </p>
+
+			
+
+			<div class="content">Link works for me, and is fast.</div>
+
+			<div id="sig56645" class="signature">Read the <a href="http://forums.virtualbox.org/viewtopic.php?t=8208" class="postlink">Forum Posting Guide</a> before opening a topic.<br /><a href="http://forums.virtualbox.org/viewtopic.php?t=8669" class="postlink">VirtualBox FAQ</a>: Check this before asking questions.<br /><a href="http://www.virtualbox.org/manual/UserManual.html" class="postlink">Online User Manual</a>: A must read if you want to know what we're talking about.<br /><a href="http://forums.virtualbox.org/viewtopic.php?t=15679" class="postlink">Howto: Install Linux Guest Additions</a><br /><a href="http://forums.virtualbox.org/viewtopic.php?t=15868" class="postlink">Howto: Use Shared Folders on Linux Guest</a><br />See the Tutorials and FAQ section at the top of the Forum for more guides.<br />Try searching the forums first with Google and add the site filter for this forum.<br />E.g. <span style="font-weight: bold">install guest additions site:forums.virtualbox.org</span><br /><br />Retired from this Forum since OSSO introduction.</div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile56645">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=12623" style="color: #3366CC;" class="username-coloured">Sasquatch</a>
+			</dt>
+
+			<dd>Volunteer</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 17800</dd><dd><strong>Joined:</strong> 17. Mar 2008, 13:41</dd><dd><strong>Location:</strong> /dev/random</dd>
+			<dd><strong>Primary OS:</strong> Debian other</dd>
+		
+			<dd><strong>VBox Version:</strong> PUEL</dd>
+		
+			<dd><strong>Guest OSses:</strong> Windows XP, Windows 7, Linux</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p73629" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=7&amp;p=73629" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p73629">Re: no audio driver on Windows 7 (64bit) guest</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=73629#p73629"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=31154">Sani9000</a></strong> &raquo; 2. May 2009, 16:04 </p>
+
+			
+
+			<div class="content">That hint was really useful. Many thanks!<br /><br />Greets, Martin</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile73629">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=31154">Sani9000</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 1</dd><dd><strong>Joined:</strong> 2. May 2009, 16:00</dd>
+			<dd><strong>Primary OS:</strong> Ubuntu other</dd>
+		
+			<dd><strong>VBox Version:</strong> OSE Debian</dd>
+		
+			<dd><strong>Guest OSses:</strong> Windows Vista 64 Bit</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p80084" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=7&amp;p=80084" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p80084">Re: no audio driver on Windows 7 (64bit) guest</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=80084#p80084"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=34373">nicpac22</a></strong> &raquo; 10. Jun 2009, 04:06 </p>
+
+			
+
+			<div class="content">So, I've now read several posts on both this forum and others on getting audio to work in Windows 7 as a guest OS but I still can't seem to get mine working.  I'm running Fedora 10 as the host (64-bit) and Windows 7 RC as the guest OS also 64-bit in VBox 2.2.4.  Network, graphics, everything else works fine, but for some reason windows cannot find my audio device.  I have updated to the latest Realtek HD drivers, I have tried every combination of ALSA, Pulseaudio, etc. with AC97 and SB16, with no luck (yes, I made sure the enable audio checkbox is checked).  No matter what, in windows device manager for my audio device, I get:<br /><br />The device cannot start. (Code 10)<br /><br />I have enabled, disabled the audio device, restarted the VM, uninstalled and reinstalled the drivers, to no avail.  At this point, any advice would be greatly appreciated.<br /><br />Thanks,<br /><br />Nick</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile80084">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=34373">nicpac22</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 5</dd><dd><strong>Joined:</strong> 10. Jun 2009, 03:58</dd>
+			<dd><strong>Primary OS:</strong> Fedora 10</dd>
+		
+			<dd><strong>VBox Version:</strong> OSE Fedora</dd>
+		
+			<dd><strong>Guest OSses:</strong> Windows 7 RC</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p80605" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=7&amp;p=80605" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p80605">Re: no audio driver on Windows 7 (64bit) guest</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=80605#p80605"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=34373">nicpac22</a></strong> &raquo; 13. Jun 2009, 17:34 </p>
+
+			
+
+			<div class="content">Bump.  Anyone?  I'm fairly certain this has something to do with another process not allowing VBox to access the soundcard, but I can't seem to find it...</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile80605">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=34373">nicpac22</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 5</dd><dd><strong>Joined:</strong> 10. Jun 2009, 03:58</dd>
+			<dd><strong>Primary OS:</strong> Fedora 10</dd>
+		
+			<dd><strong>VBox Version:</strong> OSE Fedora</dd>
+		
+			<dd><strong>Guest OSses:</strong> Windows 7 RC</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p80608" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=7&amp;p=80608" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p80608">Re: no audio driver on Windows 7 (64bit) guest</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=80608#p80608"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=17693" style="color: #00AA00;" class="username-coloured">Perryg</a></strong> &raquo; 13. Jun 2009, 17:47 </p>
+
+			
+
+			<div class="content">@nicpac22,<br /><br />Have you used the Windows update to install the drivers for you?  When you open Windows update it may say that you are up to date but you need to tell it to check for updates anyway before it will check for drivers.  Also it may show them as additional updates instead of Windows needed updates and you will need to put a check mark in to actually get the drivers.  Use the AC97 sound for Windows 7.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile80608">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=17693" style="color: #00AA00;" class="username-coloured">Perryg</a>
+			</dt>
+
+			<dd>Site Moderator</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 32029</dd><dd><strong>Joined:</strong> 6. Sep 2008, 22:55</dd>
+			<dd><strong>Primary OS:</strong> Linux other</dd>
+		
+			<dd><strong>VBox Version:</strong> OSE self-compiled</dd>
+		
+			<dd><strong>Guest OSses:</strong> *NIX</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p81168" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=7&amp;p=81168" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p81168">Re: no audio driver on Windows 7 (64bit) guest</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=81168#p81168"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=13848">scottro</a></strong> &raquo; 17. Jun 2009, 18:00 </p>
+
+			
+
+			<div class="content">@Guiness---that site worked well for me too, thank you.  It said Vista driver, but works on Win 7 RC as well.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile81168">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=13848">scottro</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 20</dd><dd><strong>Joined:</strong> 6. May 2008, 01:30</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p93609" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=7&amp;p=93609" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p93609">Re: no audio driver on Windows 7 (64bit) guest</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=93609#p93609"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=23372">billcondie</a></strong> &raquo; 22. Aug 2009, 21:27 </p>
+
+			
+
+			<div class="content">I finally got it to work after days of frustration<br /><br />In Audio settings I chose ALSA with ICH AC97<br /><br />Went to Windows 7 updates -- and bingo!<br /><br />Now I've got MovieMaker 2.6 working great and the days of a dual boot are numbered.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile93609">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=23372">billcondie</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 13</dd><dd><strong>Joined:</strong> 1. Feb 2009, 00:37</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p93618" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=7&amp;p=93618" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p93618">Re: no audio driver on Windows 7 (64bit) guest</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=93618#p93618"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=12623" style="color: #3366CC;" class="username-coloured">Sasquatch</a></strong> &raquo; 23. Aug 2009, 00:05 </p>
+
+			
+
+			<div class="content">Nicpac,<br /><br />Remove the device from device manager, reboot the machine and it should install the driver properly now.</div>
+
+			<div id="sig93618" class="signature">Read the <a href="http://forums.virtualbox.org/viewtopic.php?t=8208" class="postlink">Forum Posting Guide</a> before opening a topic.<br /><a href="http://forums.virtualbox.org/viewtopic.php?t=8669" class="postlink">VirtualBox FAQ</a>: Check this before asking questions.<br /><a href="http://www.virtualbox.org/manual/UserManual.html" class="postlink">Online User Manual</a>: A must read if you want to know what we're talking about.<br /><a href="http://forums.virtualbox.org/viewtopic.php?t=15679" class="postlink">Howto: Install Linux Guest Additions</a><br /><a href="http://forums.virtualbox.org/viewtopic.php?t=15868" class="postlink">Howto: Use Shared Folders on Linux Guest</a><br />See the Tutorials and FAQ section at the top of the Forum for more guides.<br />Try searching the forums first with Google and add the site filter for this forum.<br />E.g. <span style="font-weight: bold">install guest additions site:forums.virtualbox.org</span><br /><br />Retired from this Forum since OSSO introduction.</div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile93618">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=12623" style="color: #3366CC;" class="username-coloured">Sasquatch</a>
+			</dt>
+
+			<dd>Volunteer</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 17800</dd><dd><strong>Joined:</strong> 17. Mar 2008, 13:41</dd><dd><strong>Location:</strong> /dev/random</dd>
+			<dd><strong>Primary OS:</strong> Debian other</dd>
+		
+			<dd><strong>VBox Version:</strong> PUEL</dd>
+		
+			<dd><strong>Guest OSses:</strong> Windows XP, Windows 7, Linux</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<form id="viewtopic" method="post" action="./viewtopic.php?f=7&amp;t=13694">
+
+	<fieldset class="display-options" style="margin-top: 0; ">
+		<a href="./viewtopic.php?f=7&amp;t=13694&amp;start=15" class="right-box right">Next</a>
+		<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select> <input type="submit" name="sort" value="Go" class="button2" /></label>
+		
+	</fieldset>
+
+	</form>
+	<hr />
+
+
+<div class="topic-actions">
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="./posting.php?mode=reply&amp;f=7&amp;t=13694" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="pagination">
+			24 posts
+			 &bull; <a href="#" onclick="jumpto(); return false;" title="Click to jump to page…">Page <strong>1</strong> of <strong>2</strong></a> &bull; <span><strong>1</strong><span class="page-sep">, </span><a href="./viewtopic.php?f=7&amp;t=13694&amp;start=15">2</a></span>
+		</div>
+	
+</div>
+
+
+	<p></p><p><a href="./viewforum.php?f=7" class="left-box left" accesskey="r">Return to VirtualBox on Linux Hosts</a></p>
+
+	<form method="post" id="jumpbox" action="./viewforum.php" onsubmit="if(this.f.value == -1){return false;}">
+
+	
+		<fieldset class="jumpbox">
+	
+			<label for="f" accesskey="j">Jump to:</label>
+			<select name="f" id="f" onchange="if(this.options[this.selectedIndex].value != -1){ document.forms['jumpbox'].submit() }">
+			
+				<option value="-1">Select a forum</option>
+			<option value="-1">------------------</option>
+				<option value="12">General</option>
+			
+				<option value="23">&nbsp; &nbsp;Howtos and Tutorials</option>
+			
+				<option value="24">&nbsp; &nbsp;&nbsp; &nbsp;Rules and FAQ</option>
+			
+				<option value="35">&nbsp; &nbsp;&nbsp; &nbsp;Generic Advice</option>
+			
+				<option value="31">&nbsp; &nbsp;&nbsp; &nbsp;Building VirtualBox</option>
+			
+				<option value="25">&nbsp; &nbsp;&nbsp; &nbsp;Windows Hosts</option>
+			
+				<option value="26">&nbsp; &nbsp;&nbsp; &nbsp;Linux Hosts</option>
+			
+				<option value="27">&nbsp; &nbsp;&nbsp; &nbsp;Other Hosts</option>
+			
+				<option value="28">&nbsp; &nbsp;&nbsp; &nbsp;Windows Guests</option>
+			
+				<option value="29">&nbsp; &nbsp;&nbsp; &nbsp;Linux Guests</option>
+			
+				<option value="30">&nbsp; &nbsp;&nbsp; &nbsp;Other Guests</option>
+			
+				<option value="1">&nbsp; &nbsp;Using VirtualBox</option>
+			
+				<option value="6">&nbsp; &nbsp;VirtualBox on Windows Hosts</option>
+			
+				<option value="38">&nbsp; &nbsp;&nbsp; &nbsp;VirtualBox on Windows pre-releases</option>
+			
+				<option value="7" selected="selected">&nbsp; &nbsp;VirtualBox on Linux Hosts</option>
+			
+				<option value="8">&nbsp; &nbsp;VirtualBox on Mac OS X Hosts</option>
+			
+				<option value="39">&nbsp; &nbsp;&nbsp; &nbsp;VirtualBox on Mac OS X pre-releases</option>
+			
+				<option value="11">&nbsp; &nbsp;VirtualBox on Solaris Hosts</option>
+			
+				<option value="40">&nbsp; &nbsp;VirtualBox on Other Hosts</option>
+			
+				<option value="9">&nbsp; &nbsp;Suggestions</option>
+			
+				<option value="32">&nbsp; &nbsp;Third Party Applications</option>
+			
+				<option value="13">Guest systems</option>
+			
+				<option value="2">&nbsp; &nbsp;Windows Guests</option>
+			
+				<option value="3">&nbsp; &nbsp;Linux Guests</option>
+			
+				<option value="20">&nbsp; &nbsp;Solaris Guests</option>
+			
+				<option value="22">&nbsp; &nbsp;Mac OS X Guests</option>
+			
+				<option value="4">&nbsp; &nbsp;Other Guests</option>
+			
+				<option value="14">Deutschsprachige Anwender</option>
+			
+				<option value="5">&nbsp; &nbsp;Allgemeine Diskussionen</option>
+			
+				<option value="33">VirtualBox Programming</option>
+			
+				<option value="34">&nbsp; &nbsp;The VirtualBox API</option>
+			
+				<option value="10">&nbsp; &nbsp;VirtualBox OSE</option>
+			
+				<option value="17">Special Purpose</option>
+			
+				<option value="15">&nbsp; &nbsp;VirtualBox Beta / Release Candidate Feedback</option>
+			
+				<option value="36">&nbsp; &nbsp;&nbsp; &nbsp;Pre-Beta 5.1 Postings</option>
+			
+			</select>
+			<input type="submit" value="Go" class="button2" />
+		</fieldset>
+	</form>
+
+
+	<h3>Who is online</h3>
+	<p>Users browsing this forum: <a href="./memberlist.php?mode=viewprofile&amp;u=101312">CoutoReis</a>, <span style="color: #9E8DA7;" class="username-coloured">Google [Bot]</span> and 14 guests</p>
+</div>
+
+<div id="page-footer">
+
+	<div class="navbar">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<ul class="linklist">
+			<li class="icon-home"><a href="./index.php">Board index</a></li>
+				
+			<li class="rightside"><a href="./memberlist.php?mode=leaders">The team</a> &bull; <a href="./ucp.php?mode=delete_cookies">Delete all board cookies</a> &bull; All times are UTC + 1 hour [ <abbr title="Daylight Saving Time">DST</abbr> ]</li>
+		</ul>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+ 		<div class="copyright" style="align: center;">
+ 	<table class="footer" cellpadding="5" cellspacing="5" width="100%">
+ 	  <tbody>
+ 	    <tr style="text-align: center;" valign="top">
+ 	      <td>Get VirtualBox<br />
+ 	        <a href="http://www.virtualbox.org/wiki/Downloads">
+ 	          <img src="/styles/prosilver/imageset/vbox_footer_logo.png" alt="Get VirtualBox" height="35"  width="108" /></a>
+ 	      </td>
+ 	      <td>
+ 	        Forum powered by <a href="http://www.phpbb.com/">phpBB</a> &copy; phpBB Group
+		
+ 	        <br />By any use of this Website, you agree to be bound by these <br />
+ 	        <big><b><a href="http://www.oracle.com/us/legal/terms/index.html">Policies and Terms of Use</a></b></big>
+ 	      </td>
+ 	      <td>Sponsored by<br />
+                 <a href="http://www.oracle.com/">
+ 	          <img src="/styles/prosilver/imageset/logo_oracle_footer.gif" height="29" width="100" alt="Sponsored by ORACLE" /></a>
+ 	      </td>
+ 	    </tr> 
+ 	  </tbody>
+ 		 </table>
+	</div>
+</div>
+
+<div>
+	<a id="bottom" name="bottom" accesskey="z"></a>
+	
+</div>
+
+</body>
+</html>
